@@ -4,7 +4,7 @@
 
 > Professional personal portfolio website which showcase my personal information, skills and projects as a Fullstack software developer.
 
-![screenshot](./app_screenshot.JPG)
+![screenshot](./assets/images/app_screenshot.JPG)
 
 
 Additional description about the project and its features.
@@ -35,9 +35,9 @@ To get a local copy up and running follow these simple example steps.
 
 👤 **Amedzro Elikplim Emmanuel**
 
-- GitHub: [@githubhandle](https://github.com/Amedzro-Elikplim)
-- Twitter: [@twitterhandle](https://twitter.com/Amedzro-Elikplim)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/emmanuel-elikplim-amedzro-187590125/)
+- GitHub: [@Amedzro-Elikplim](https://github.com/Amedzro-Elikplim)
+- Twitter: [@ElikplimAmedzro](https://twitter.com/Amedzro-Elikplim)
+- LinkedIn: [Emmanuel Elikplim Amedzro](https://www.linkedin.com/in/emmanuel-elikplim-amedzro-187590125/)
 
 
 ## 🤝 Contributing
