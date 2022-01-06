@@ -29,6 +29,7 @@
 .bar-icon:hover {
   zoom: 1.8;
   transition: ease-out;
+  box-shadow: 1px 1px 5px gray;
 }
 
 #logo-text {
