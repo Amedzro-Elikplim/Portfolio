@@ -4,6 +4,8 @@
 
 > Professional personal portfolio website which showcase my personal information, skills and projects as a Fullstack software developer.
 
+![screenshot](./app_screenshot.JPG)
+
 
 Additional description about the project and its features.
 
@@ -11,6 +13,8 @@ Additional description about the project and its features.
 
 - HTML
 - CSS
+- Webhint
+- Stylelint
 
 
 ## Getting Started
@@ -20,6 +24,7 @@ To get a local copy up and running follow these simple example steps.
 ### Prerequisites
 - Knowledge on basic html and css
 - Text Editor (VScode, Atom, Sublime text, etc)
+- Basic knowledge of node.js
 
 ### Setup
 - clone repository using `git clone`
