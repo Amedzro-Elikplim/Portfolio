@@ -23,6 +23,7 @@ To get a local copy up and running follow these simple example steps.
 
 ### Setup
 - clone repository using `git clone`
+- run `npm install`
 - run `live server`
 
 ## Authors
