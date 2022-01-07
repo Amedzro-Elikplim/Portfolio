@@ -126,10 +126,11 @@
   flex-wrap: wrap;
 }
 
-.social-icons > i {
+.social-icons > a {
   color: white;
   padding: 5px;
   zoom: 1.5;
+  text-decoration: none;
 }
 
 .work-section {
