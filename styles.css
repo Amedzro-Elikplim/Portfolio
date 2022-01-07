@@ -12,14 +12,8 @@
   padding: 15px;
   color: white;
   opacity: 1;
-}
-
-.toolbar-items {
   width: 100%;
-  display: flex;
   justify-content: space-between;
-  align-items: center;
-  list-style: none;
 }
 
 .bar-icon {
@@ -32,9 +26,23 @@
   box-shadow: 1px 1px 5px gray;
 }
 
-#logo-text {
-  line-height: 2px;
+.logo {
   font-weight: 500;
+  color: white;
+  font-size: 1.7rem;
+  text-decoration: none;
+}
+
+.logo:hover {
+  text-decoration: none;
+}
+
+.logo:active {
+  text-decoration: none;
+}
+
+.logo:visited {
+  text-decoration: none;
 }
 
 .headline-section {
