@@ -143,7 +143,6 @@
   justify-content: center;
   align-items: center;
   color: #a2a3ae;
-   
 }
 
 .work-section-title {
@@ -161,10 +160,14 @@
 }
 
 .recent-work {
-  color: #9490FF;
+  color: #9490ff;
   font-size: 50px;
   line-height: 60px;
   font-style: normal;
   font-weight: 500;
-  padding: 60px 20px 20px 20px;
+  padding: 60px 20px 60px 20px;
+}
+
+.work-section-hr {
+  margin-top: -60px;
 }
