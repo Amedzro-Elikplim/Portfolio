@@ -118,3 +118,15 @@
 .skills > li {
   margin-bottom: 0.3rem;
 }
+
+.social-icons {
+  min-height: 40vh;
+  display: flex;
+  justify-content: center;
+}
+
+.social-icons > i {
+  color: white;
+  padding: 5px;
+  zoom: 1.5;
+}
