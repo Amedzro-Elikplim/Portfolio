@@ -95,6 +95,13 @@
   grid-template-columns: auto auto;
   padding: 1rem;
   gap: 10px;
+  background: url("./assets/images/ellipse5.svg");
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.skill-set {
+  background-color: transparent;
 }
 
 .title {
@@ -103,6 +110,7 @@
   font-style: normal;
   color: #9490ff;
   padding: 0.6rem 1.2rem 0.6rem 1.2rem;
+  background-color: transparent;
 }
 
 .skills {
@@ -113,13 +121,15 @@
   font-weight: normal;
   font-style: normal;
   line-height: 24px;
+  background-color: transparent;
 }
 
 .skills > li {
   margin-bottom: 0.3rem;
+  background-color: transparent;
 }
 
-.social-icons > ul{
+.social-icons > ul {
   min-height: 10vh;
   display: flex;
   justify-content: center;
