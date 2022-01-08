@@ -224,12 +224,13 @@
 }
 
 .project-description {
-  font-weight: 350;
+  font-weight: 400;
   font-style: normal;
   line-height: 28px;
   font-size: 20px;
   padding: 2rem;
   color: white;
+  font-family: Inter -apple-system, Raleway, Roboto, Oxygen, sans-serif;
   background-color: transparent;
 }
 
