@@ -234,7 +234,6 @@
   background-color: transparent;
 }
 
-
 .technologies > ul {
   display: flex;
   flex-wrap: wrap;
@@ -242,6 +241,10 @@
   align-items: center;
   color: white;
   list-style-type: none;
+}
+
+.technologies > ul > li {
+  text-align: center;
 }
 
 .technologies > ul > li:not(:first-child) {
