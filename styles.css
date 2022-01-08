@@ -119,14 +119,15 @@
   margin-bottom: 0.3rem;
 }
 
-.social-icons {
+.social-icons > ul{
   min-height: 10vh;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  list-style-type: none;
 }
 
-.social-icons > a {
+.social-icons > ul > li > a {
   color: white;
   padding: 5px;
   zoom: 1.5;
