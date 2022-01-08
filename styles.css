@@ -234,15 +234,17 @@
   background-color: transparent;
 }
 
-.technologies {
+
+.technologies > ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
   color: white;
+  list-style-type: none;
 }
 
-.technologies > p:not(:first-child) {
+.technologies > ul > li:not(:first-child) {
   font-weight: 500;
   font-size: 15px;
   line-height: 20px;
