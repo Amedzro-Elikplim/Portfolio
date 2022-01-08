@@ -181,15 +181,40 @@
 .project-image {
   width: 340px;
   height: 236px;
+  background-color: transparent;
 }
 
 .project-image-container {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: transparent;
+}
+
+.project-info-container1 {
+  background: url("./assets/images/ellipse1.svg");
+  background-repeat: no-repeat;
+}
+
+.project-info-container2 {
+  background: url("./assets/images/ellipse2.svg");
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.project-info-container3 {
+  background: url("./assets/images/ellipse3.svg");
+  background-repeat: no-repeat;
+}
+
+.project-info-container4 {
+  background: url("./assets/images/ellipse4.svg");
+  background-repeat: no-repeat;
+  background-position: right;
 }
 
 .project-name {
+  background-color: transparent;
   padding: 2rem;
   color: white;
   font-size: 32px;
@@ -205,6 +230,7 @@
   font-size: 20px;
   padding: 2rem;
   color: white;
+  background-color: transparent;
 }
 
 .technologies {
