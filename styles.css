@@ -3,7 +3,6 @@
   margin: 0;
   padding: 0;
   background-color: #191765;
-  font-family: -apple-system, Raleway, Roboto, Oxygen, sans-serif;
 }
 
 .toolbar {
@@ -30,8 +29,11 @@
 .logo {
   font-weight: 500;
   color: white;
-  font-size: 1.7rem;
+  font-size: 18px;
   text-decoration: none;
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  letter-spacing: 0.03em;
 }
 
 .logo:hover {
@@ -59,12 +61,15 @@
 
 .headline-section > h1 {
   color: #7d73fc;
-  font-weight: 700;
-  line-height: 50px;
-  font-size: 2.3rem;
-  padding: 1rem;
+  font-weight: bold;
+  line-height: 72px;
+  font-size: 48px;
+  padding: 1.2rem;
+  font-style: normal;
+  letter-spacing: 0.37px;
   text-align: center;
   background-color: transparent;
+  font-family: Roboto, sans-serif;
 }
 
 .headline-section > h2 {
@@ -73,15 +78,21 @@
   padding: 1rem;
   text-align: center;
   background-color: transparent;
+  font-family: Roboto, sans-serif;
+  font-size: 32px;
+  line-height: 44px;
+  font-style: normal;
 }
 
 .headline-section > p {
   color: #c8c8d4;
   padding: 2rem;
   text-align: center;
-  line-height: 20px;
+  line-height: 28px;
+  font-size: 20px;
   background-color: transparent;
   font-weight: 400;
+  font-family: Roboto, sans-serif;
 }
 
 .horizontal-line {
@@ -105,6 +116,7 @@
 }
 
 .title {
+  font-family: Roboto, sans-serif;
   font-size: 12px;
   font-weight: 500;
   font-style: normal;
@@ -116,17 +128,18 @@
 .skills {
   list-style-type: none;
   padding: 1.2rem;
-  color: white;
-  font-size: 15px;
-  font-weight: normal;
-  font-style: normal;
-  line-height: 24px;
   background-color: transparent;
 }
 
 .skills > li {
-  margin-bottom: 0.3rem;
+  margin-bottom: 0.4rem;
   background-color: transparent;
+  font-size: 15px;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 24px;
+  color: #f5f5ff;
+  font-family: Roboto, sans-serif;
 }
 
 .social-icons > ul {
@@ -159,12 +172,13 @@
 
 .work-section-title {
   text-align: center;
-  color: white;
+  color: #a2a3a3;
   padding: 10px;
   font-size: 20px;
   font-style: normal;
   line-height: 32px;
   font-weight: 500;
+  font-family: Roboto, sans-serif;
 }
 
 .work-icon {
@@ -173,11 +187,12 @@
 
 .recent-work {
   color: #9490ff;
-  font-size: 50px;
-  line-height: 60px;
+  font-size: 40px;
+  line-height: 42px;
   font-style: normal;
   font-weight: 500;
   padding: 60px 0 60px 1.7rem;
+  font-family: Roboto, sans-serif;
 }
 
 .work-section-hr {
@@ -232,6 +247,7 @@
   line-height: 44px;
   font-weight: 500;
   font-style: normal;
+  font-family: Roboto, sans-serif;
 }
 
 .project-description {
@@ -240,9 +256,9 @@
   line-height: 28px;
   font-size: 20px;
   padding: 2rem;
-  color: white;
-  font-family: Inter -apple-system, Raleway, Roboto, Oxygen, sans-serif;
+  font-family: Inter, sans-serif;
   background-color: transparent;
+  color: #dcdce8;
 }
 
 .technologies > ul {
@@ -256,14 +272,15 @@
 
 .technologies > ul > li {
   text-align: center;
-}
-
-.technologies > ul > li:not(:first-child) {
+  font-family: Inter, sans-serif;
   font-weight: 500;
   font-size: 15px;
   line-height: 20px;
-  border-left: 1px solid gray;
   padding: 10px;
+}
+
+.technologies > ul > li:not(:first-child) {
+  border-left: 1px solid gray;
 }
 
 .project-button {
