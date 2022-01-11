@@ -31,13 +31,21 @@ To get a local copy up and running follow these simple example steps.
 - run `npm install`
 - run `live server`
 
-## Authors
+## Author1
 
 👤 **Amedzro Elikplim Emmanuel**
 
 - GitHub: [@Amedzro-Elikplim](https://github.com/Amedzro-Elikplim)
 - Twitter: [@ElikplimAmedzro](https://twitter.com/Amedzro-Elikplim)
 - LinkedIn: [Emmanuel Elikplim Amedzro](https://www.linkedin.com/in/emmanuel-elikplim-amedzro-187590125/)
+
+## Author2
+
+👤 **Andre Esau Acosta**
+
+- GitHub:@andreacostabz
+- Twitter:@andrebze
+- LinkedIn: https://www.linkedin.com/iandreacostabiz/
 
 ## 🤝 Contributing
 

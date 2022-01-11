@@ -341,7 +341,7 @@
 
 .input {
   width: 327px;
-  height:48px;
+  height: 48px;
   background-color: #fff;
   margin: 40px 24px;
   padding: 15px 16px;
@@ -388,8 +388,8 @@
 }
 
 .footer-social-icons li i {
-   padding: 20.01px;
-   color: #fff;
+  padding: 20.01px;
+  color: #fff;
 }
 
 .developer-email {
