@@ -330,3 +330,14 @@
   color: #f5f5ff;
   margin-bottom: 40px;
 }
+
+.form-input-container {
+  list-style-type: none;
+}
+
+.input {
+  width: 327px;
+  height:48px;
+  background-color: #fff;
+  margin: 40px 24px;
+}
