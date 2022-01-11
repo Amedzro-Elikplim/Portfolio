@@ -372,7 +372,36 @@
   letter-spacing: 3%;
   text-align: center;
   color: #edecff;
+  margin-top: 40px;
   background-color: #7d73fc;
   border: none;
   outline: none;
+}
+
+.footer-social-icons {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 71px;
+}
+
+.footer-social-icons li i {
+   padding: 20.01px;
+   color: #fff;
+}
+
+.developer-email {
+  width: 221px;
+  height: 29px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-size: 20px;
+  text-align: center;
+  line-height: 28px;
+  color: #42526e;
+  margin-top: 17px;
+  margin-top: 9px;
+  margin-bottom: 40px;
 }
