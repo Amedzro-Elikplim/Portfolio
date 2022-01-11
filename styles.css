@@ -333,6 +333,10 @@
 
 .form-input-container {
   list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .input {
@@ -340,4 +344,35 @@
   height:48px;
   background-color: #fff;
   margin: 40px 24px;
+  padding: 15px 16px;
+}
+
+.client-message {
+  width: 327px;
+  height: 148px;
+  background-color: #fff;
+  font-family: Inter, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 15px;
+  line-height: 24px;
+  color: #81818c;
+  padding: 12px 12px;
+}
+
+.submit-message-button {
+  width: 100px;
+  height: 48px;
+  padding: 12px 12px;
+  font-family: Roboto, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 12px;
+  line-height: 24px;
+  letter-spacing: 3%;
+  text-align: center;
+  color: #edecff;
+  background-color: #7d73fc;
+  border: none;
+  outline: none;
 }
