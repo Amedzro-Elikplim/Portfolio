@@ -379,6 +379,10 @@
   outline: none;
 }
 
+.submit-message-button:hover {
+  box-shadow: 1px 8px 16px rgba(125, 115, 252, 0.48);
+}
+
 .footer-social-icons {
   list-style-type: none;
   display: flex;
