@@ -224,6 +224,7 @@
 }
 
 .project {
+  display: flex;
   flex-direction: column;
   background: transparent;
 }
@@ -552,14 +553,43 @@
 
 @media (min-width: 768px) {
 
+  .toolbar {
+    
+  }
+
   .project {
     flex-direction: row;
 
   }
 
+  .project-image {
+    width: 500px;
+    height: 448px;
+    margin: 20px;
+  }
+
   .project-info-container1 {
     display: flex;
     flex-direction: column;
+    background-image: none;
+  }
+
+  .project-info-container2 {
+    display: flex;
+    flex-direction: column;
+    background-image: none;
+  }
+
+  .project-info-container3 {
+    display: flex;
+    flex-direction: column;
+    background-image: none;
+  }
+
+  .project-info-container4 {
+    display: flex;
+    flex-direction: column;
+    background-image: none;
   }
 }
 
