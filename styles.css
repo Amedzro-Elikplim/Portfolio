@@ -247,7 +247,6 @@
   background-repeat: no-repeat;
   background-position-y: -40px;
   background-position-x: -40px;
-  
 }
 
 .project-info-container2 {
@@ -334,7 +333,7 @@
   align-items: center;
 }
 
-.contact-container h3 {
+.contact {
   width: 327px;
   height: 35px;
   font-family: Roboto, sans-serif;
@@ -346,6 +345,10 @@
   color: #9390ff;
   margin-bottom: 24px;
   margin-top: 120px;
+}
+
+.chat {
+  display: none;
 }
 
 .contact-container p {
@@ -549,17 +552,32 @@
     font-weight: 700;
   }
 
+  .contact {
+    display: none;
+  }
+
+  .chat {
+    display: block;
+    width: 327px;
+    height: 35px;
+    font-family: Roboto, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 32px;
+    line-height: 24px;
+    text-align: center;
+    color: #9390ff;
+    margin-bottom: 24px;
+    margin-top: 120px;
+  }
 }
 
 @media (min-width: 768px) {
-
   .toolbar {
-    
   }
 
   .project {
     flex-direction: row;
-
   }
 
   .project-image {
