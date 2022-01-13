@@ -42,7 +42,7 @@
 
   <body>
     <!--header-->
-    <header class="toolbar">
+    <header class="toolbar d-flex align-center">
       <a href="#" class="logo">John Doe</a>
       <nav class="navbar">
         <i class="fa fa-bars bar-icon"></i>
@@ -57,8 +57,8 @@
     <!--header ends here-->
 
     <!--headline sections-->
-    <section class="headline-section">
-      <h1>Amedzro Eli</h1>
+    <section class="headline-section d-flex align-center justify-center d-col">
+      <h1>Amedzro Elikplim Emmanuel</h1>
       <h2>Software Developer</h2>
       <p>
         I can help you build a product , feature or website Look through some of
@@ -113,6 +113,12 @@
     <!--webhint flags section tags without heading as error.
     Hence div tag is used to wrap the icons to pass the webhint check.
     This approach is used since there is no heading given in the figma design on figma-->
+  <div class="work-section-container">
+    <div class="work-section-title-container1">
+      <i class="fa fa-arrow-down work-icon"></i>
+      <h3 class="work-section-title">Work</h3>
+    </div>
+
     <div class="social-icons">
       <ul>
         <li>
@@ -133,21 +139,21 @@
       </ul>
     </div>
     <!--section for social links and icons ends here-->
+    <div class="work-section-title-container2">
+      <i class="fa fa-arrow-down work-icon"></i>
+      <h3 class="work-section-title">Work</h3>
+    </div>
 
+    </div>
     <!--work section-->
     <section class="work-section">
-      <div class="work-section-title-container">
-        <i class="fa fa-arrow-down work-icon"></i>
-        <h3 class="work-section-title">Work</h3>
-      </div>
-
       <h2 class="recent-work">MY RECENT WORK</h2>
       <div class="work-section-hr">
         <hr class="horizontal-line" />
       </div>
 
       <!--project template 1-->
-      <div class="project">
+      <div class="project d-flex">
         <div class="project-image-container">
           <img
             src="./assets/images/background.jpg"
