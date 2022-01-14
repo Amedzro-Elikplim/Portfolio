@@ -5,7 +5,6 @@
   background-color: #191765;
 }
 
-/*utility classes*/
 .d-flex {
   display: flex;
 }
@@ -25,15 +24,15 @@
 .d-col {
   flex-direction: column;
 }
-/*utility classes end here*/
 
 .toolbar {
   min-height: 4rem;
   padding: 15px;
   color: white;
   opacity: 1;
-  width: 100%;
+  min-width: 100%;
   justify-content: space-between;
+  align-items: center;
 }
 
 .bar-icon {
@@ -461,11 +460,19 @@
 }
 
 /* media queries */
+
 @media (min-width: 576px) {
   .toolbar {
     padding-left: 50px;
     padding-right: 50px;
     padding-top: 26px;
+  }
+
+  .skills li {
+    font-weight: normal;
+    font-size: 14.1935px;
+    line-height: 28px;
+    font-style: normal;
   }
 
   .navbar .bar-icon {
@@ -535,14 +542,6 @@
     font-weight: bold;
   }
 
-  .skills li {
-    font-weight: normal;
-    font-size: 14.1935px;
-    line-height: 28px;
-    font-style: normal;
-    font-weight: normal;
-  }
-
   .work-section-container {
     display: flex;
     align-items: center;
@@ -605,45 +604,10 @@
 }
 
 @media (min-width: 768px) {
-
-  
-
   .project {
     background: url("./assets/images/ellipse-desktop2.svg");
     background-repeat: no-repeat;
     flex-direction: row;
-    padding: 80px;
-  }
-
-  .project1 {
-    background: url("./assets/images/ellipse-desktop4.svg");
-    background-repeat: no-repeat;
-    flex-direction: row;
-    padding: 80px;
-    background-position: left;
-  }
-
-  .project-reverse {
-    flex-direction: row-reverse;
-    padding: 80px;
-    background: url("./assets/images/ellipse-desktop3.svg");
-    background-position: right;
-    background-repeat: no-repeat;
-  }
-
-  .project-reverse1 {
-    flex-direction: row-reverse;
-    padding: 80px;
-    background: url("./assets/images/ellipse-desktop5.svg");
-    background-position: right top;
-    background-repeat: no-repeat;
-  }
-
-  .project-image {
-    width: 700px;
-    height: 500px;
-    margin-left: 60px;
-    margin-right: 60px;
   }
 
   .project-info-container1 {
@@ -651,12 +615,44 @@
     flex-direction: column;
     background: none;
     justify-content: flex-end;
-    min-width: 400px;
-    height: 380px;
   }
 
-  .project-button {
-    margin-bottom: 0px;
+  .project-description {
+    min-width: 400px;
+  }
+
+  .project-image {
+    margin-left: 90px;
+    margin-right: 90px;
+    height: 430px;
+    width: 600px;
+  }
+
+  .project1 {
+    background: url("./assets/images/ellipse-desktop4.svg");
+    background-repeat: no-repeat;
+    flex-direction: row;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-position: left;
+  }
+
+  .project-reverse {
+    flex-direction: row-reverse;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background: url("./assets/images/ellipse-desktop3.svg");
+    background-position: right;
+    background-repeat: no-repeat;
+  }
+
+  .project-reverse1 {
+    flex-direction: row-reverse;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background: url("./assets/images/ellipse-desktop5.svg");
+    background-position: right top;
+    background-repeat: no-repeat;
   }
 
   .project-info-container2 {
@@ -664,8 +660,6 @@
     flex-direction: column;
     background: none;
     justify-content: flex-end;
-    min-width: 400px;
-    height: 380px;
   }
 
   .project-info-container3 {
@@ -673,8 +667,6 @@
     flex-direction: column;
     background: none;
     justify-content: flex-end;
-    min-width: 400px;
-    height: 380px;
   }
 
   .project-info-container4 {
@@ -682,45 +674,13 @@
     flex-direction: column;
     background: none;
     justify-content: flex-end;
-    min-width: 400px;
-    height: 380px;
-  }
-
-  .contact-container p {
-    width: 684px;
   }
 
   .input {
-    width: 684px;
+    min-width: 684px;
   }
 
   .client-message {
-    width: 684px;
+    min-width: 684px;
   }
-
-  .submit-message-button {
-    width: 160px;
-    height: 48px;
-    padding: 12px;
-    font-size: 15px;
-  }
-
-  /* .icons-and-text {
-    display: flex;
-    border: 1px solid green;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .footer-social-icons {
-    margin-left: 100px;
-    width: 50%;
-  }
-
-  .developer-email {
-    width: 50%;
-  } */
-}
-
-@media (min-width: 992px) {
 }
