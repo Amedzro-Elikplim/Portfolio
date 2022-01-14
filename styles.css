@@ -690,11 +690,14 @@
   }
 
   .navbar ul li:hover {
-    transform: scale(1.09)
+    transform: scale(1.09);
+    text-decoration: underline;
+    background-image: linear-gradient(#191765, #7d73fc, #9490ff);
+    cursor: pointer;
   }
 
   .fa-envelope:hover {
-    background-image: url("./assets/images/background.jpg");
+    rotate: 12deg;
   }
 
   .project {
