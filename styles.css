@@ -605,7 +605,7 @@
 
 @media (min-width: 768px) {
   .project {
-    background: url("./assets/images/ellipse-desktop2.svg");
+
     background-repeat: no-repeat;
     flex-direction: row;
   }
@@ -683,4 +683,83 @@
   .client-message {
     min-width: 684px;
   }
+}
+
+@media (min-width: 992px) {
+  .project {
+    background-image: url("./assets/images/ellipse-desktop2.svg");
+    background-repeat: no-repeat;
+    flex-direction: row;
+  }
+
+  .project-image-container {
+    
+  }
+
+  .project-info-container1 {
+    display: flex;
+    flex-direction: column;
+    background: none;
+    justify-content: flex-end;
+  }
+
+  .project-description {
+    min-width: 400px;
+  }
+
+  .project-image {
+    margin-left: 25px;
+    margin-right: 25px;
+    height: 430px;
+    width: 600px;
+  }
+
+  .project1 {
+    background: url("./assets/images/ellipse-desktop4.svg");
+    background-repeat: no-repeat;
+    flex-direction: row;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-position: left;
+  }
+
+  .project-reverse {
+    flex-direction: row-reverse;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background: url("./assets/images/ellipse-desktop3.svg");
+    background-position: right;
+    background-repeat: no-repeat;
+  }
+
+  .project-reverse1 {
+    flex-direction: row-reverse;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background: url("./assets/images/ellipse-desktop5.svg");
+    background-position: right top;
+    background-repeat: no-repeat;
+  }
+
+  .project-info-container2 {
+    display: flex;
+    flex-direction: column;
+    background: none;
+    justify-content: flex-end;
+  }
+
+  .project-info-container3 {
+    display: flex;
+    flex-direction: column;
+    background: none;
+    justify-content: flex-end;
+  }
+
+  .project-info-container4 {
+    display: flex;
+    flex-direction: column;
+    background: none;
+    justify-content: flex-end;
+  }
+
 }
