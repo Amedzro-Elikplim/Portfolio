@@ -685,6 +685,18 @@
 }
 
 @media (min-width: 992px) {
+  .logo:hover {
+  text-transform: uppercase;
+  }
+
+  .navbar ul li:hover {
+    transform: scale(1.09)
+  }
+
+  .fa-envelope:hover {
+    background-image: url("./assets/images/background.jpg");
+  }
+
   .project {
     background-image: url("./assets/images/ellipse-desktop2.svg");
     background-repeat: no-repeat;
