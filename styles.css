@@ -229,7 +229,19 @@
   background: transparent;
 }
 
+.project1 {
+  display: flex;
+  flex-direction: column;
+  background: transparent;
+}
+
 .project-reverse {
+  display: flex;
+  flex-direction: column;
+  background: transparent;
+}
+
+.project-reverse1 {
   display: flex;
   flex-direction: column;
   background: transparent;
@@ -445,7 +457,7 @@
   line-height: 28px;
   color: #42526e;
   margin-top: 17px;
-  margin-bottom: 40px; 
+  margin-bottom: 40px;
 }
 
 /* media queries */
@@ -481,7 +493,7 @@
 
   .headline-section {
     margin-top: 140px;
-    line-height: 109px;  
+    line-height: 109px;
     background: url("./assets/images/ellipse-desktop1.svg");
     background-repeat: no-repeat;
     background-position: left;
@@ -594,45 +606,84 @@
 
 @media (min-width: 768px) {
 
+  
+
   .project {
     background: url("./assets/images/ellipse-desktop2.svg");
     background-repeat: no-repeat;
     flex-direction: row;
+    padding: 80px;
+  }
+
+  .project1 {
+    background: url("./assets/images/ellipse-desktop4.svg");
+    background-repeat: no-repeat;
+    flex-direction: row;
+    padding: 80px;
+    background-position: left;
   }
 
   .project-reverse {
     flex-direction: row-reverse;
+    padding: 80px;
+    background: url("./assets/images/ellipse-desktop3.svg");
+    background-position: right;
+    background-repeat: no-repeat;
+  }
+
+  .project-reverse1 {
+    flex-direction: row-reverse;
+    padding: 80px;
+    background: url("./assets/images/ellipse-desktop5.svg");
+    background-position: right top;
+    background-repeat: no-repeat;
   }
 
   .project-image {
-    width: 600px;
-    height: 400px;
-    margin: 100px;
+    width: 700px;
+    height: 500px;
+    margin-left: 60px;
+    margin-right: 60px;
   }
 
   .project-info-container1 {
     display: flex;
     flex-direction: column;
     background: none;
- 
+    justify-content: flex-end;
+    min-width: 400px;
+    height: 380px;
+  }
+
+  .project-button {
+    margin-bottom: 0px;
   }
 
   .project-info-container2 {
     display: flex;
     flex-direction: column;
-    background-image: none;
+    background: none;
+    justify-content: flex-end;
+    min-width: 400px;
+    height: 380px;
   }
 
   .project-info-container3 {
     display: flex;
     flex-direction: column;
-    background-image: none;
+    background: none;
+    justify-content: flex-end;
+    min-width: 400px;
+    height: 380px;
   }
 
   .project-info-container4 {
     display: flex;
     flex-direction: column;
-    background-image: none;
+    background: none;
+    justify-content: flex-end;
+    min-width: 400px;
+    height: 380px;
   }
 
   .contact-container p {
@@ -669,7 +720,6 @@
   .developer-email {
     width: 50%;
   } */
-
 }
 
 @media (min-width: 992px) {
