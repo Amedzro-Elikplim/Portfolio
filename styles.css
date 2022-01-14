@@ -605,7 +605,6 @@
 
 @media (min-width: 768px) {
   .project {
-
     background-repeat: no-repeat;
     flex-direction: row;
   }
