@@ -741,6 +741,11 @@
     width: 600px;
   }
 
+  .project-image:hover {
+    border: 3px dotted #f4c430;
+    transform: scale(1.03);
+  }
+
   .project1 {
     background: url("./assets/images/ellipse-desktop4.svg");
     background-repeat: no-repeat;
