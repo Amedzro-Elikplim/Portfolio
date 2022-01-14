@@ -511,6 +511,21 @@
     margin-left: 142px;
     margin-right: 142px;
     line-height: 105px;
+    animation-duration: 3s;
+    animation-name: slidein;
+  }
+
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+      font-size: 30px;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
   }
 
   .headline-section h2 {
