@@ -690,10 +690,8 @@
     background-image: url("./assets/images/ellipse-desktop2.svg");
     background-repeat: no-repeat;
     flex-direction: row;
-  }
-
-  .project-image-container {
-    
+    background-position-y: 95%;
+    background-position-x: -8%;
   }
 
   .project-info-container1 {
