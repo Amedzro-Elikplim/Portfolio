@@ -5,15 +5,34 @@
   background-color: #191765;
 }
 
+.d-flex {
+  display: flex;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.d-row {
+  flex-direction: row;
+}
+
+.d-col {
+  flex-direction: column;
+}
+
 .toolbar {
   min-height: 4rem;
-  display: flex;
-  align-items: center;
   padding: 15px;
   color: white;
   opacity: 1;
-  width: 100%;
+  min-width: 100%;
   justify-content: space-between;
+  align-items: center;
 }
 
 .bar-icon {
@@ -24,6 +43,10 @@
   zoom: 1.8;
   transition: ease-out;
   box-shadow: 1px 1px 5px gray;
+}
+
+.navbar ul {
+  display: none;
 }
 
 .logo {
@@ -49,10 +72,6 @@
 }
 
 .headline-section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   text-align: center;
   background: url("./assets/images/headline_bg.svg");
   background-repeat: no-repeat;
@@ -162,7 +181,11 @@
   min-height: 50vh;
 }
 
-.work-section-title-container {
+.work-section-title-container1 {
+  display: none;
+}
+
+.work-section-title-container2 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -202,6 +225,25 @@
 .project {
   display: flex;
   flex-direction: column;
+  background: transparent;
+}
+
+.project1 {
+  display: flex;
+  flex-direction: column;
+  background: transparent;
+}
+
+.project-reverse {
+  display: flex;
+  flex-direction: column;
+  background: transparent;
+}
+
+.project-reverse1 {
+  display: flex;
+  flex-direction: column;
+  background: transparent;
 }
 
 .project-image {
@@ -220,12 +262,16 @@
 .project-info-container1 {
   background: url("./assets/images/ellipse1.svg");
   background-repeat: no-repeat;
+  background-position-y: -40px;
+  background-position-x: -40px;
 }
 
 .project-info-container2 {
   background: url("./assets/images/ellipse2.svg");
   background-repeat: no-repeat;
   background-position: right;
+  border: none;
+  outline: none;
 }
 
 .project-info-container3 {
@@ -304,7 +350,7 @@
   align-items: center;
 }
 
-.contact-container h3 {
+.contact {
   width: 327px;
   height: 35px;
   font-family: Roboto, sans-serif;
@@ -316,6 +362,10 @@
   color: #9390ff;
   margin-bottom: 24px;
   margin-top: 120px;
+}
+
+.chat {
+  display: none;
 }
 
 .contact-container p {
@@ -386,7 +436,6 @@
 .footer-social-icons {
   list-style-type: none;
   display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
   margin-top: 71px;
@@ -407,6 +456,359 @@
   line-height: 28px;
   color: #42526e;
   margin-top: 17px;
-  margin-top: 9px;
   margin-bottom: 40px;
+}
+
+/* media queries */
+
+@media (min-width: 576px) {
+  .toolbar {
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 26px;
+  }
+
+  .skills li {
+    font-weight: normal;
+    font-size: 14.1935px;
+    line-height: 28px;
+    font-style: normal;
+  }
+
+  .navbar .bar-icon {
+    display: none;
+  }
+
+  .navbar {
+    width: 50%;
+  }
+
+  .navbar ul {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .navbar ul li {
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  .headline-section {
+    margin-top: 140px;
+    line-height: 109px;
+    background: url("./assets/images/ellipse-desktop1.svg");
+    background-repeat: no-repeat;
+    background-position: left;
+  }
+
+  .headline-section h1 {
+    font-size: 75px;
+    margin-left: 142px;
+    margin-right: 142px;
+    line-height: 105px;
+    animation-duration: 3s;
+    animation-name: slidein;
+  }
+
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+      font-size: 30px;
+    }
+
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+
+  .headline-section h2 {
+    font-size: 40px;
+    line-height: 47px;
+    margin-left: 142px;
+    margin-right: 142px;
+  }
+
+  .headline-section p {
+    width: 600px;
+    font-size: 20px;
+    line-height: 32px;
+    font-weight: normal;
+  }
+
+  .about-section {
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    align-items: center;
+    background: url("./assets/images/ellipse-desktop1.svg");
+    background-repeat: no-repeat;
+    background-position: right;
+  }
+
+  .title {
+    font-size: 18px;
+    line-height: 29px;
+    font-weight: bold;
+  }
+
+  .work-section-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 90px;
+    margin-right: 90px;
+  }
+
+  .work-section-title-container1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #a2a3ae;
+  }
+
+  .work-section-title-container2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .social-icons ul {
+    align-items: center;
+  }
+
+  .recent-work {
+    font-size: 40px;
+    line-height: 114px;
+    font-weight: 700;
+  }
+
+  .contact {
+    display: none;
+  }
+
+  .chat {
+    display: flex;
+    font-family: Roboto, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 32px;
+    line-height: 24px;
+    text-align: center;
+    color: #9390ff;
+    margin-bottom: 24px;
+    margin-top: 120px;
+  }
+
+  .contact-container p {
+    width: 400px;
+  }
+
+  .input {
+    width: 400px;
+  }
+
+  .client-message {
+    width: 400px;
+  }
+}
+
+@media (min-width: 768px) {
+  .project {
+    background-repeat: no-repeat;
+    flex-direction: row;
+  }
+
+  .project-info-container1 {
+    display: flex;
+    flex-direction: column;
+    background: none;
+    justify-content: flex-end;
+  }
+
+  .project-description {
+    min-width: 400px;
+  }
+
+  .project-image {
+    margin-left: 90px;
+    margin-right: 90px;
+    height: 430px;
+    width: 600px;
+  }
+
+  .project1 {
+    background: url("./assets/images/ellipse-desktop4.svg");
+    background-repeat: no-repeat;
+    flex-direction: row;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-position: left;
+  }
+
+  .project-reverse {
+    flex-direction: row-reverse;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background: url("./assets/images/ellipse-desktop3.svg");
+    background-position: right;
+    background-repeat: no-repeat;
+  }
+
+  .project-reverse1 {
+    flex-direction: row-reverse;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background: url("./assets/images/ellipse-desktop5.svg");
+    background-position: right top;
+    background-repeat: no-repeat;
+  }
+
+  .project-info-container2 {
+    display: flex;
+    flex-direction: column;
+    background: none;
+    justify-content: flex-end;
+  }
+
+  .project-info-container3 {
+    display: flex;
+    flex-direction: column;
+    background: none;
+    justify-content: flex-end;
+  }
+
+  .project-info-container4 {
+    display: flex;
+    flex-direction: column;
+    background: none;
+    justify-content: flex-end;
+  }
+
+  .input {
+    min-width: 684px;
+  }
+
+  .client-message {
+    min-width: 684px;
+  }
+}
+
+@media (min-width: 992px) {
+  .logo:hover {
+    text-transform: uppercase;
+  }
+
+  .navbar ul li:hover {
+    transform: scale(1.09);
+    text-decoration: underline;
+    background-image: linear-gradient(#191765, #7d73fc, #9490ff);
+    cursor: pointer;
+  }
+
+  .fa-envelope:hover {
+    rotate: 12deg;
+  }
+
+  .project {
+    background-image: url("./assets/images/ellipse-desktop2.svg");
+    background-repeat: no-repeat;
+    flex-direction: row;
+    background-position-y: 95%;
+    background-position-x: -8%;
+  }
+
+  .project-info-container1 {
+    display: flex;
+    flex-direction: column;
+    background: none;
+    justify-content: flex-end;
+  }
+
+  .project-description {
+    min-width: 400px;
+  }
+
+  .project-image {
+    margin-left: 25px;
+    margin-right: 25px;
+    height: 430px;
+    width: 600px;
+  }
+
+  .project-image:hover {
+    border: 3px dotted #f4c430;
+    transform: scale(1.03);
+  }
+
+  .project1 {
+    background: url("./assets/images/ellipse-desktop4.svg");
+    background-repeat: no-repeat;
+    flex-direction: row;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-position: left;
+  }
+
+  .project-reverse {
+    flex-direction: row-reverse;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background: url("./assets/images/ellipse-desktop3.svg");
+    background-position: right;
+    background-repeat: no-repeat;
+  }
+
+  .project-reverse1 {
+    flex-direction: row-reverse;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background: url("./assets/images/ellipse-desktop5.svg");
+    background-position: right top;
+    background-repeat: no-repeat;
+  }
+
+  .project-info-container2 {
+    display: flex;
+    flex-direction: column;
+    background: none;
+    justify-content: flex-end;
+  }
+
+  .project-info-container3 {
+    display: flex;
+    flex-direction: column;
+    background: none;
+    justify-content: flex-end;
+  }
+
+  .project-info-container4 {
+    display: flex;
+    flex-direction: column;
+    background: none;
+    justify-content: flex-end;
+  }
+
+  .work-icon:hover {
+    animation-name: bounce;
+    animation-duration: 0.3s;
+    animation-iteration-count: 3;
+  }
+
+  @keyframes bounce {
+    from {
+      margin-top: 20%;
+      width: 300%;
+    }
+
+    to {
+      margin-top: 15%;
+      width: 30%;
+    }
+  }
 }

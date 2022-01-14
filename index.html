@@ -42,17 +42,23 @@
 
   <body>
     <!--header-->
-    <header class="toolbar">
-      <a href="#" class="logo">John Doe</a>
-      <nav>
+    <header class="toolbar d-flex align-center">
+      <a href="#" class="logo">Elikplim</a>
+      <nav class="navbar">
         <i class="fa fa-bars bar-icon"></i>
+        <ul>
+          <li>Portfolio</li>
+          <li>About</li>
+          <li>Contact</li>
+          <li><i class="fa fa-envelope"></i></li>
+        </ul>
       </nav>
     </header>
     <!--header ends here-->
 
     <!--headline sections-->
-    <section class="headline-section">
-      <h1>Amedzro Eli</h1>
+    <section class="headline-section d-flex align-center justify-center d-col">
+      <h1>Amedzro Elikplim Emmanuel</h1>
       <h2>Software Developer</h2>
       <p>
         I can help you build a product , feature or website Look through some of
@@ -107,34 +113,39 @@
     <!--webhint flags section tags without heading as error.
     Hence div tag is used to wrap the icons to pass the webhint check.
     This approach is used since there is no heading given in the figma design on figma-->
-    <div class="social-icons">
-      <ul>
-        <li>
-          <a href="#"><i class="fab fa-github"></i></a>
-        </li>
-        <li>
-          <a href="#"><i class="fab fa-linkedin-in"></i></a>
-        </li>
-        <li>
-          <a href="#"><i class="fab fa-instagram"></i></a>
-        </li>
-        <li>
-          <a href="#"><i class="fab fa-twitter"></i></a>
-        </li>
-        <li>
-          <a href="#"><i class="fab fa-facebook"></i></a>
-        </li>
-      </ul>
-    </div>
-    <!--section for social links and icons ends here-->
-
-    <!--work section-->
-    <section class="work-section">
-      <div class="work-section-title-container">
+    <div class="work-section-container">
+      <div class="work-section-title-container1">
         <i class="fa fa-arrow-down work-icon"></i>
         <h3 class="work-section-title">Work</h3>
       </div>
 
+      <div class="social-icons">
+        <ul>
+          <li>
+            <a href="#"><i class="fab fa-github"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+          </li>
+        </ul>
+      </div>
+      <!--section for social links and icons ends here-->
+      <div class="work-section-title-container2">
+        <i class="fa fa-arrow-down work-icon"></i>
+        <h3 class="work-section-title">Work</h3>
+      </div>
+    </div>
+    <!--work section-->
+    <section class="work-section">
       <h2 class="recent-work">MY RECENT WORK</h2>
       <div class="work-section-hr">
         <hr class="horizontal-line" />
@@ -144,38 +155,39 @@
       <div class="project">
         <div class="project-image-container">
           <img
-            src="./assets/images/background.jpg"
+            src="./assets/images/art.png"
             alt="project image"
             class="project-image"
           />
         </div>
 
-        <div class="project-info-container1">
-          <h2 class="project-name">Multi-Post Stories</h2>
-          <p class="project-description">
-            A daily selection of privately personalized reads; no accounts or
-            sign-ups required. has been the industry's standard dummy text ever
-            since the 1500s, when an unknown printer took a standard dummy text.
-          </p>
-        </div>
-
-        <div class="technologies">
-          <ul>
-            <li>css</li>
-            <li>html</li>
-            <li>bootstrap</li>
-            <li>ruby</li>
-          </ul>
-        </div>
-
         <div>
+          <div class="project-info-container1">
+            <h2 class="project-name">Multi-Post Stories</h2>
+            <p class="project-description">
+              A daily selection of privately personalized reads; no accounts or
+              sign-ups required. has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a standard
+              dummy text.
+            </p>
+          </div>
+
+          <div class="technologies">
+            <ul>
+              <li>css</li>
+              <li>html</li>
+              <li>bootstrap</li>
+              <li>ruby</li>
+            </ul>
+          </div>
+
           <button type="button" class="project-button">See Project</button>
         </div>
       </div>
       <!--project template 1 ends here-->
 
       <!--project template 2-->
-      <div class="project">
+      <div class="project-reverse">
         <div class="project-image-container">
           <img
             src="./assets/images/background.jpg"
@@ -184,32 +196,34 @@
           />
         </div>
 
-        <div class="project-info-container2">
-          <h2 class="project-name">Multi-Post Stories</h2>
-          <p class="project-description">
-            A daily selection of privately personalized reads; no accounts or
-            sign-ups required. has been the industry's standard dummy text ever
-            since the 1500s, when an unknown printer took a standard dummy text.
-          </p>
-        </div>
-
-        <div class="technologies">
-          <ul>
-            <li>css</li>
-            <li>html</li>
-            <li>bootstrap</li>
-            <li>ruby</li>
-          </ul>
-        </div>
-
         <div>
+          <div class="project-info-container2">
+            <h2 class="project-name">Multi-Post Stories</h2>
+            <p class="project-description">
+              A daily selection of privately personalized reads; no accounts or
+              sign-ups required. has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a standard
+              dummy text.
+            </p>
+          </div>
+
+          <div class="technologies">
+            <ul>
+              <li>css</li>
+              <li>html</li>
+              <li>bootstrap</li>
+              <li>ruby</li>
+            </ul>
+          </div>
+
           <button type="button" class="project-button">See Project</button>
         </div>
       </div>
+
       <!--project template 2 ends here-->
 
       <!--project template 3-->
-      <div class="project">
+      <div class="project1">
         <div class="project-image-container">
           <img
             src="./assets/images/background.jpg"
@@ -218,32 +232,35 @@
           />
         </div>
 
-        <div class="project-info-container3">
-          <h2 class="project-name">Multi-Post Stories</h2>
-          <p class="project-description">
-            A daily selection of privately personalized reads; no accounts or
-            sign-ups required. has been the industry's standard dummy text ever
-            since the 1500s, when an unknown printer took a standard dummy text.
-          </p>
-        </div>
-
-        <div class="technologies">
-          <ul>
-            <li>css</li>
-            <li>html</li>
-            <li>bootstrap</li>
-            <li>ruby</li>
-          </ul>
-        </div>
-
         <div>
+          <div class="project-info-container3">
+            <h2 class="project-name">Multi-Post Stories</h2>
+            <p class="project-description">
+              A daily selection of privately personalized reads; no accounts or
+              sign-ups required. has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a standard
+              dummy text.
+            </p>
+          </div>
+
+          <div class="technologies">
+            <ul>
+              <li>css</li>
+              <li>html</li>
+              <li>bootstrap</li>
+              <li>ruby</li>
+            </ul>
+          </div>
+
           <button type="button" class="project-button">See Project</button>
         </div>
       </div>
+
       <!--project template 3 ends here-->
 
       <!--project template 4-->
-      <div class="project">
+
+      <div class="project-reverse1">
         <div class="project-image-container">
           <img
             src="./assets/images/background.jpg"
@@ -252,25 +269,26 @@
           />
         </div>
 
-        <div class="project-info-container4">
-          <h2 class="project-name">Multi-Post Stories</h2>
-          <p class="project-description">
-            A daily selection of privately personalized reads; no accounts or
-            sign-ups required. has been the industry's standard dummy text ever
-            since the 1500s, when an unknown printer took a standard dummy text.
-          </p>
-        </div>
-
-        <div class="technologies">
-          <ul>
-            <li>css</li>
-            <li>html</li>
-            <li>bootstrap</li>
-            <li>ruby</li>
-          </ul>
-        </div>
-
         <div>
+          <div class="project-info-container4">
+            <h2 class="project-name">Multi-Post Stories</h2>
+            <p class="project-description">
+              A daily selection of privately personalized reads; no accounts or
+              sign-ups required. has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a standard
+              dummy text.
+            </p>
+          </div>
+
+          <div class="technologies">
+            <ul>
+              <li>css</li>
+              <li>html</li>
+              <li>bootstrap</li>
+              <li>ruby</li>
+            </ul>
+          </div>
+
           <button type="button" class="project-button">See Project</button>
         </div>
       </div>
@@ -280,7 +298,8 @@
 
     <!--footer-->
     <footer class="contact-container">
-      <h3>CONTACT US</h3>
+      <h3 class="contact">CONTACT US</h3>
+      <h3 class="chat">Let's Chat</h3>
       <p>
         If you have an application you are interested in developing, a feature
         that you need built or a project that needs coding. I’d love to help
@@ -326,11 +345,12 @@
           </li>
 
           <li>
-            <button type="submit" class="submit-message-button">
-              See Project
-            </button>
+            <button type="submit" class="submit-message-button">Send</button>
           </li>
         </ul>
+      </form>
+
+      <div class="icons-and-text">
         <ul class="footer-social-icons">
           <li>
             <a href="#"><i class="fab fa-github"></i></a>
@@ -348,8 +368,8 @@
             <a href="#"><i class="fab fa-facebook"></i></a>
           </li>
         </ul>
-      </form>
-      <p class="developer-email">amedzroemmanuel@gmail.com</p>
+        <p class="developer-email">amedzroemmanuel@gmail.com</p>
+      </div>
     </footer>
   </body>
 </html>
