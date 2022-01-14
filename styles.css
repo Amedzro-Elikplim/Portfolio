@@ -521,7 +521,7 @@
       width: 300%;
       font-size: 30px;
     }
-  
+
     to {
       margin-left: 0%;
       width: 100%;
@@ -701,7 +701,7 @@
 
 @media (min-width: 992px) {
   .logo:hover {
-  text-transform: uppercase;
+    text-transform: uppercase;
   }
 
   .navbar ul li:hover {
@@ -792,5 +792,23 @@
     flex-direction: column;
     background: none;
     justify-content: flex-end;
+  }
+
+  .work-icon:hover {
+    animation-name: bounce;
+    animation-duration: 0.3s;
+    animation-iteration-count: 3;
+  }
+
+  @keyframes bounce {
+    from {
+      margin-top: 20%;
+      width: 300%;
+    }
+
+    to {
+      margin-top: 15%;
+      width: 30%;
+    }
   }
 }
