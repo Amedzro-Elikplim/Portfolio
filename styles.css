@@ -35,17 +35,7 @@
   align-items: center;
 }
 
-.bar-icon {
-  zoom: 1.5;
-}
-
-.bar-icon:hover {
-  zoom: 1.8;
-  transition: ease-out;
-  box-shadow: 1px 1px 5px gray;
-}
-
-.navbar ul {
+.navbar-desktop ul {
   display: none;
 }
 
@@ -475,22 +465,18 @@
     font-style: normal;
   }
 
-  .navbar .bar-icon {
-    display: none;
-  }
-
-  .navbar {
+  .navbar-desktop {
     width: 50%;
   }
 
-  .navbar ul {
+  .navbar-desktop ul {
     display: flex;
     list-style-type: none;
     align-items: center;
     justify-content: space-evenly;
   }
 
-  .navbar ul li {
+  .navbar-desktop ul li {
     font-family: Roboto, sans-serif;
     font-style: normal;
     font-weight: 500;
@@ -704,7 +690,7 @@
     text-transform: uppercase;
   }
 
-  .navbar ul li:hover {
+  .navbar-desktop ul li:hover {
     transform: scale(1.09);
     text-decoration: underline;
     background-image: linear-gradient(#191765, #7d73fc, #9490ff);

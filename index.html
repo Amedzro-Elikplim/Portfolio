@@ -11,6 +11,7 @@
     />
 
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="menu.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -58,14 +59,23 @@
     <!--header-->
     <header class="toolbar d-flex align-center">
       <a href="#" class="logo">Elikplim</a>
-      <nav class="navbar">
-        <i class="fa fa-bars bar-icon"></i>
+      <nav class="navbar-desktop">
         <ul>
           <li>Portfolio</li>
           <li>About</li>
           <li>Contact</li>
           <li><i class="fa fa-envelope"></i></li>
         </ul>
+      </nav>
+      <i class="fa fa-bars bar-icon"></i>
+      <nav class="mobile-menu-off">
+        <i class="fas fa-times bar-icon-off"></i>
+        <ul>
+          <li>Portfolio<i class="fas fa-chevron-right fa"></i></li>
+          <li>About<i class="fas fa-chevron-right"></i></li>
+          <li>Contact<i class="fas fa-chevron-right"></i></li>
+        </ul>
+        <div class="background-image"></div>
       </nav>
     </header>
     <!--header ends here-->
