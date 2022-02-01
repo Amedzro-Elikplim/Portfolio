@@ -52,6 +52,10 @@
   letter-spacing: 0.03em;
 }
 
+section {
+  min-height: 20vh;
+}
+
 .logo:hover {
   text-decoration: none;
 }
