@@ -9,8 +9,8 @@ barIcon.addEventListener('click', () => {
   body.style.overflow = 'hidden';
 });
 
-lists.forEach((items) => {
-  items.addEventListener('click', () => {
+lists.forEach((element) => {
+  element.addEventListener('click', () => {
     mobileMenuDropdown.style.display = 'none';
     body.style.overflow = 'visible';
   });
