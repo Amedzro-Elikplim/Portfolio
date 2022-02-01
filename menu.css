@@ -13,9 +13,9 @@
 }
 
 .dropdown-menu-icon {
-  margin: 10px 15px;
+  margin: 20px 13px;
   float: right;
-  zoom: 2;
+  zoom: 2.5;
 }
 
 .menu-nav-links {
@@ -30,7 +30,9 @@
 
 .nav-links {
   display: flex;
-  justify-content: space-around;
+  margin-left: 40px;
+  margin-right: 40px;
+  justify-content: space-between;
   align-items: center;
   background: transparent;
   margin-top: 40px;
@@ -44,4 +46,9 @@
   font-weight: 500;
   font-family: Roboto, sans-serif;
   text-align: start;
+  line-height: 32px;
+}
+
+.chevron-icon {
+  opacity: 0.4;
 }
