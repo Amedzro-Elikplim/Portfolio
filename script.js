@@ -55,6 +55,7 @@ function createProjects() {
   button1.classList.toggle('hidden');
 closeIcon.addEventListener('click', ()=>{
     container.classList.toggle('hidden');
+    button1.classList.toggle('active');
 })
   
   project1Container.appendChild(container);

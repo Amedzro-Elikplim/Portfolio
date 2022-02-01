@@ -3,11 +3,17 @@
     height: 90vh;
     opacity: 0.4;
     background: blue;
-    z-index: 200;
+    z-index: 2;
     margin-left: 20px;
+    position: sticky;
+    top: 150px;
 
 }
 
 .hidden {
     display: none;
+}
+
+.active {
+    display: block;
 }
