@@ -9,9 +9,8 @@
       name="description"
       content="Author: Amedzro Emmanuel Elikplim, School: Microverse, Project: Portfolio"
     />
-
+    <link rel="stylesheet" href="menu.css">
     <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="menu.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -58,25 +57,52 @@
   <body>
     <!--header-->
     <header class="toolbar d-flex align-center">
-      <a href="#" class="logo">Elikplim</a>
-      <nav class="navbar-desktop">
-        <ul>
-          <li>Portfolio</li>
-          <li>About</li>
-          <li>Contact</li>
-          <li><i class="fa fa-envelope"></i></li>
+       
+        <a href="#" class="logo">Elikplim</a>
+        <nav class="navbar-desktop">
+          <ul>
+            <li>Portfolio</li>
+            <li>About</li>
+            <li>Contact</li>
+            <li><i class="fa fa-envelope"></i></li>
+          </ul>
+        </nav>
+
+          <div class="bar-icon">
+            <i class="fa fa-bars"></i>
+          </div>
+      
+      <!--mobile menu -->
+      <nav class="dropdown-menu">
+        <i class="fa fa-times dropdown-menu-icon"></i>
+        <ul class="menu-nav-links">
+          <li>
+            <a class="nav-links" href="" style="background-color: transparent;">
+               <h3>Portfolio</h3>
+               <i class="fa fa-chevron-right"></i>
+            </a>
+          </li>
+
+
+           <li>
+            <a class="nav-links" href="" style="background-color: transparent;">
+               <h3>About.</h3>
+               <i class="fa fa-chevron-right"></i>
+            </a>
+          </li>
+
+
+           <li>
+            <a class="nav-links" href="" style="background-color: transparent;">
+               <h3>Contact</h3>
+               <i class="fa fa-chevron-right"></i>
+            </a>
+          </li>
+           
+
         </ul>
       </nav>
-      <i class="fa fa-bars bar-icon"></i>
-      <nav class="mobile-menu-off">
-        <i class="fas fa-times bar-icon-off"></i>
-        <ul>
-          <li>Portfolio<i class="fas fa-chevron-right fa"></i></li>
-          <li>About<i class="fas fa-chevron-right"></i></li>
-          <li>Contact<i class="fas fa-chevron-right"></i></li>
-        </ul>
-        <div class="background-image"></div>
-      </nav>
+      <!--end of mobile menu-->
     </header>
     <!--header ends here-->
 
