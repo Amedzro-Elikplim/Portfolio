@@ -18,4 +18,5 @@ lists.forEach((element) => {
 
 closeIcon.addEventListener('click', () => {
   mobileMenuDropdown.style.display = 'none';
+  body.style.overflow = 'visible';
 });
