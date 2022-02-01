@@ -1,76 +1,53 @@
-/* <i class="fas fa-chevron-right"></i> */
-
-
-.bar-icon {
-  font-size: 25px;
-  position: fixed;
-  right: 20px;
-  top: 20px;
-  background-color: transparent;
-}
-
-.mobile-menu-off {
+.dropdown-menu {
+  background-color: #191765;
+  background-image: url("./assets/images/mobile-menu-background.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
   display: none;
 }
 
-.bar-icon-off {
-  font-size: 25px;
-  position: fixed;
-  right: 20px;
-  top: 20px;
+.dropdown-menu-icon {
+  margin: 10px 15px;
+  float: right;
+  zoom: 2;
 }
 
-.mobile-menu-on {
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
+.menu-nav-links {
+  list-style-type: none;
+  background: transparent;
+  clear: right;
 }
 
-.mobile-menu-on ul {
-  margin: 60px 0 0 0;
-  list-style: none;
+.menu-nav-links li {
+  background: transparent;
+}
+
+.nav-links {
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  justify-content: space-around;
+  align-items: center;
+  background: transparent;
+  margin-top: 40px;
+  text-decoration: none;
+  color: white;
 }
 
-.mobile-menu-on li {
-  font-size: 26px;
-  font-weight: 800;
+.nav-links h3 {
+  background: transparent;
+  font-size: 24px;
+  font-weight: 500;
   font-family: Roboto, sans-serif;
-  padding: 30px;
-  background-color: transparent;
+  text-align: start;
 }
 
-.fa-chevron-right {
-  color:transparent white;
-  padding-left: 100px;
-  font-size: 20px;
-  background-color: transparent;
-}
-
-.mobile-menu-on .background-image {
-  background-image: url(assets/images/mobile-menu-background.svg);
-  height: 100%;
-  width: 100%;
-  background-position: top;
-  background-size: 100%;
-  margin-top: -200px;
-}
-
-
-@media (min-width: 576px) {
-  .mobile-menu-on,
-  .mobile-menu-off,
-  .bar-icon,
-  .bar-icon-off {
+/* @media (max-width: 575px) {
+  .dropdown-menu {
     display: none;
   }
-
-  .fa-bars {
-    font-size: 0;
-  }
-}
-
+} */
