@@ -47,12 +47,15 @@ const details = [
 function createProjects() {
   
   const container = document.createElement('div');
+  const testbutton = document.createElement('img');
+  testbutton.src = '';
   container.className = 'project-container';
-  container.innerHTML = `<button class="close-button" id="close" onclick=${write()}>exit</button>`;
+  container.appendChild(testbutton);
+  testbutton.className = 'close-button';
   
-function write() {
-  console.log('hello');
-}
+testbutton.addEventListener('click', ()=>{
+    container.classList.toggle('hidden');
+})
   
   project1Container.appendChild(container);
 }
