@@ -1,0 +1,17 @@
+.project-container {
+    width: 90%;
+    height: 90vh;
+    opacity: 0.4;
+    background: red;
+    z-index: 200;
+}
+
+.hidden {
+    display: none;
+}
+
+.close-button {
+    width: 200px;
+    height: 100px;
+    background: green;
+}
