@@ -34,6 +34,8 @@
   width: 100%;
   justify-content: space-between;
   align-items: center;
+  position: fixed;
+  top: 0;
 }
 
 .navbar-desktop {
@@ -63,6 +65,7 @@
 }
 
 .headline-section {
+  margin-top: 60px;
   text-align: center;
   background: url("./assets/images/headline_bg.svg");
   background-repeat: no-repeat;
@@ -457,6 +460,8 @@
     padding-left: 50px;
     padding-right: 50px;
     padding-top: 26px;
+    position: fixed;
+    top: 0;
   }
 
   .bar-icon {
