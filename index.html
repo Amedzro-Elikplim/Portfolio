@@ -9,16 +9,17 @@
       name="description"
       content="Author: Amedzro Emmanuel Elikplim, School: Microverse, Project: Portfolio"
     />
-
+    <link rel="stylesheet" href="menu.css" />
     <link rel="stylesheet" href="styles.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
     <link
       rel="preload"
       as="style"
       onload="this.onload = null; this.rel = 'stylesheet'"
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;@500;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
     />
 
     <link
@@ -54,12 +55,11 @@
     </script>
   </head>
 
-  <body>
+  <body class="main-body">
     <!--header-->
     <header class="toolbar d-flex align-center">
       <a href="#" class="logo">Elikplim</a>
-      <nav class="navbar">
-        <i class="fa fa-bars bar-icon"></i>
+      <nav class="navbar-desktop">
         <ul>
           <li>Portfolio</li>
           <li>About</li>
@@ -67,11 +67,46 @@
           <li><i class="fa fa-envelope"></i></li>
         </ul>
       </nav>
+
+      <div class="bar-icon">
+        <i class="fa fa-bars"></i>
+      </div>
+
+      <!--mobile menu -->
+      <nav class="dropdown-menu">
+        <i class="fa fa-times dropdown-menu-icon"></i>
+        <ul class="menu-nav-links">
+          <li>
+            <a class="nav-links" href="#porfolio-section">
+              <h3>Portfolio</h3>
+              <i class="fa fa-chevron-right chevron-icon"></i>
+            </a>
+          </li>
+
+          <li>
+            <a class="nav-links" href="#about-section">
+              <h3>About.</h3>
+              <i class="fa fa-chevron-right chevron-icon"></i>
+            </a>
+          </li>
+
+          <li>
+            <a class="nav-links" href="#contact-section">
+              <h3>Contact</h3>
+              <i class="fa fa-chevron-right chevron-icon"></i>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <!--end of mobile menu-->
     </header>
     <!--header ends here-->
 
     <!--headline sections-->
-    <section class="headline-section d-flex align-center justify-center d-col">
+    <section
+      class="headline-section d-flex align-center justify-center d-col"
+      id="porfolio-section"
+    >
       <h1>Amedzro Elikplim Emmanuel</h1>
       <h2>Software Developer</h2>
       <p>
@@ -85,7 +120,7 @@
     <hr class="horizontal-line" />
 
     <!--about sections-->
-    <section class="about-section">
+    <section class="about-section" id="about-section">
       <div class="skill-set">
         <h3 class="title">Languages</h3>
         <ul class="skills">
@@ -311,7 +346,7 @@
     <!--work section ends here-->
 
     <!--footer-->
-    <footer class="contact-container">
+    <footer class="contact-container" id="contact-section">
       <h3 class="contact">CONTACT US</h3>
       <h3 class="chat">Let's Chat</h3>
       <p>
@@ -385,5 +420,7 @@
         <p class="developer-email">amedzroemmanuel@gmail.com</p>
       </div>
     </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>

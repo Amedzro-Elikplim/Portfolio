@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   background-color: #191765;
+  scroll-behavior: smooth;
 }
 
 .d-flex {
@@ -30,22 +31,14 @@
   padding: 15px;
   color: white;
   opacity: 1;
-  min-width: 100%;
+  width: 100%;
   justify-content: space-between;
   align-items: center;
+  position: fixed;
+  top: 0;
 }
 
-.bar-icon {
-  zoom: 1.5;
-}
-
-.bar-icon:hover {
-  zoom: 1.8;
-  transition: ease-out;
-  box-shadow: 1px 1px 5px gray;
-}
-
-.navbar ul {
+.navbar-desktop {
   display: none;
 }
 
@@ -57,6 +50,10 @@
   font-family: Roboto, sans-serif;
   font-style: normal;
   letter-spacing: 0.03em;
+}
+
+section {
+  min-height: 20vh;
 }
 
 .logo:hover {
@@ -72,6 +69,7 @@
 }
 
 .headline-section {
+  margin-top: 60px;
   text-align: center;
   background: url("./assets/images/headline_bg.svg");
   background-repeat: no-repeat;
@@ -466,6 +464,16 @@
     padding-left: 50px;
     padding-right: 50px;
     padding-top: 26px;
+    position: fixed;
+    top: 0;
+  }
+
+  .bar-icon {
+    display: none;
+  }
+
+  .dropdown-menu {
+    display: none;
   }
 
   .skills li {
@@ -475,22 +483,19 @@
     font-style: normal;
   }
 
-  .navbar .bar-icon {
-    display: none;
-  }
-
-  .navbar {
+  .navbar-desktop {
+    display: block;
     width: 50%;
   }
 
-  .navbar ul {
+  .navbar-desktop ul {
     display: flex;
     list-style-type: none;
     align-items: center;
     justify-content: space-evenly;
   }
 
-  .navbar ul li {
+  .navbar-desktop ul li {
     font-family: Roboto, sans-serif;
     font-style: normal;
     font-weight: 500;
@@ -511,21 +516,6 @@
     margin-left: 142px;
     margin-right: 142px;
     line-height: 105px;
-    animation-duration: 3s;
-    animation-name: slidein;
-  }
-
-  @keyframes slidein {
-    from {
-      margin-left: 100%;
-      width: 300%;
-      font-size: 30px;
-    }
-
-    to {
-      margin-left: 0%;
-      width: 100%;
-    }
   }
 
   .headline-section h2 {
@@ -618,10 +608,21 @@
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
+  .logo:hover {
+    text-transform: uppercase;
+  }
+
+  .fa-envelope:hover {
+    rotate: 12deg;
+  }
+
   .project {
+    background-image: url("./assets/images/ellipse-desktop2.svg");
     background-repeat: no-repeat;
     flex-direction: row;
+    background-position-y: 95%;
+    background-position-x: -8%;
   }
 
   .project-info-container1 {
@@ -636,8 +637,8 @@
   }
 
   .project-image {
-    margin-left: 90px;
-    margin-right: 90px;
+    margin-left: 50px;
+    margin-right: 50px;
     height: 430px;
     width: 600px;
   }
@@ -691,124 +692,10 @@
   }
 
   .input {
-    min-width: 684px;
-  }
-
-  .client-message {
-    min-width: 684px;
-  }
-}
-
-@media (min-width: 992px) {
-  .logo:hover {
-    text-transform: uppercase;
-  }
-
-  .navbar ul li:hover {
-    transform: scale(1.09);
-    text-decoration: underline;
-    background-image: linear-gradient(#191765, #7d73fc, #9490ff);
-    cursor: pointer;
-  }
-
-  .fa-envelope:hover {
-    rotate: 12deg;
-  }
-
-  .project {
-    background-image: url("./assets/images/ellipse-desktop2.svg");
-    background-repeat: no-repeat;
-    flex-direction: row;
-    background-position-y: 95%;
-    background-position-x: -8%;
-  }
-
-  .project-info-container1 {
-    display: flex;
-    flex-direction: column;
-    background: none;
-    justify-content: flex-end;
-  }
-
-  .project-description {
-    min-width: 400px;
-  }
-
-  .project-image {
-    margin-left: 25px;
-    margin-right: 25px;
-    height: 430px;
     width: 600px;
   }
 
-  .project-image:hover {
-    border: 3px dotted #f4c430;
-    transform: scale(1.03);
-  }
-
-  .project1 {
-    background: url("./assets/images/ellipse-desktop4.svg");
-    background-repeat: no-repeat;
-    flex-direction: row;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    background-position: left;
-  }
-
-  .project-reverse {
-    flex-direction: row-reverse;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    background: url("./assets/images/ellipse-desktop3.svg");
-    background-position: right;
-    background-repeat: no-repeat;
-  }
-
-  .project-reverse1 {
-    flex-direction: row-reverse;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    background: url("./assets/images/ellipse-desktop5.svg");
-    background-position: right top;
-    background-repeat: no-repeat;
-  }
-
-  .project-info-container2 {
-    display: flex;
-    flex-direction: column;
-    background: none;
-    justify-content: flex-end;
-  }
-
-  .project-info-container3 {
-    display: flex;
-    flex-direction: column;
-    background: none;
-    justify-content: flex-end;
-  }
-
-  .project-info-container4 {
-    display: flex;
-    flex-direction: column;
-    background: none;
-    justify-content: flex-end;
-  }
-
-  .work-icon:hover {
-    animation-name: bounce;
-    animation-duration: 0.3s;
-    animation-iteration-count: 3;
-  }
-
-  @keyframes bounce {
-    from {
-      margin-top: 20%;
-      width: 300%;
-    }
-
-    to {
-      margin-top: 15%;
-      width: 30%;
-    }
+  .client-message {
+    width: 600px;
   }
 }
