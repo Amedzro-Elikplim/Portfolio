@@ -2,17 +2,12 @@
     width: 90%;
     height: 90vh;
     opacity: 0.4;
-    background: red;
+    background: blue;
     z-index: 200;
+    margin-left: 20px;
+
 }
 
 .hidden {
     display: none;
-}
-
-.close-button {
-    width: 200px;
-    height: 100px;
-    background: green;
-    color: azure;
 }

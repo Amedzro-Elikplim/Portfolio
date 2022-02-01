@@ -47,13 +47,13 @@ const details = [
 function createProjects() {
   
   const container = document.createElement('div');
-  const testbutton = document.createElement('img');
-  testbutton.src = '';
+  const closeIcon = document.createElement('img');
+  closeIcon.src = '/assets/images/Icon.png';
   container.className = 'project-container';
-  container.appendChild(testbutton);
-  testbutton.className = 'close-button';
-  
-testbutton.addEventListener('click', ()=>{
+  container.appendChild(closeIcon);
+  closeIcon.className = 'close-button';
+  button1.classList.toggle('hidden');
+closeIcon.addEventListener('click', ()=>{
     container.classList.toggle('hidden');
 })
   
