@@ -1,15 +1,12 @@
 .project-container {
     width: 90%;
-    height: 837px;
-    opacity: 0.9;
-    margin-left: 20px;
-    top: 130px;
+    height: 750px;
+    margin: 20px;
     border: 2px solid #fff;
-    bottom: 100px;
     z-index: 2;
     position: fixed;
     top: 30px;
-    bottom: 30px;
+    background: rgba(255, 255, 255, 0.16);
 }
 
 .hidden {
@@ -23,4 +20,58 @@
 .close-button {
     float: right;
     margin: 10px;
+}
+
+.heading {
+    background: transparent;
+    font-size: 24px;
+    font-family: Roboto, sans-serif;
+    clear: right;
+}
+
+.background-div {
+     width: 100%;
+    height: 100vh;
+    /* opacity: 0.9; */
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    bottom: 30px;
+    background: url('./assets/images/Content.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color:#191765;
+    box-shadow: 0px 48px 48px rgba(37, 47, 137, 0.08)
+}
+
+.description {
+    background: transparent;
+}
+
+.list {
+    background: transparent;
+    display: flex;
+    list-style-type: none;
+    justify-content: space-evenly;
+}
+
+.list > li {
+    background: transparent;
+}
+
+.links {
+    background: transparent;
+}
+
+.blur {
+    filter: blur(10px);
+}
+
+.scroll {
+    overflow: visible;
+}
+
+.noScroll {
+    overflow: hidden;
 }

@@ -53,9 +53,9 @@ const details = [
 
 
 
-
-function createProjects() {
+function createProject1() {
   const projectContainer = document.querySelector('.project-info-container1');
+  const backgroundDiv = document.createElement('div');
   const container = document.createElement('div');
   const closeIcon = document.createElement('img');
   const heading = document.createElement('h1');
@@ -69,9 +69,6 @@ function createProjects() {
   const link2 = document.createElement('a');
   
   
-
-
-
   heading.innerHTML = details[0].project1.name;
   projectImage.src = details[0].project1.featuredImage;
   description.innerHTML = details[0].project1.description;
@@ -84,12 +81,23 @@ function createProjects() {
   link2.innerHTML = details[0].project1.btn2Name;
   link2.href = details[0].project1.source;
   
+  
   container.className = 'project-container';
   closeIcon.className = 'close-button';
+  heading.className = 'heading';
+  description.className = 'description';
+  technologies.className = 'list';
+  link1.className = "links";
+  link2.className = "links";
+  backgroundDiv.className = "background-div";
   
+
+  body.classList.add('noScroll');
   
-closeIcon.addEventListener('click', ()=>{
-    container.classList.toggle('hidden');
+closeIcon.addEventListener('click', () => {
+  container.classList.toggle('hidden');
+  body.classList.remove('noScroll');
+  backgroundDiv.classList.toggle('hidden');
 })
   
   technologies.appendChild(list1);
@@ -104,13 +112,14 @@ closeIcon.addEventListener('click', ()=>{
   container.appendChild(link1);
   container.appendChild(link2);
 
-  projectContainer.appendChild(container);
+  backgroundDiv.appendChild(container)
+  projectContainer.appendChild(backgroundDiv);
 
 }
 
 
 
-button1.addEventListener("click", createProjects);
+button1.addEventListener("click", createProject1);
 
 
 
