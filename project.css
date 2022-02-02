@@ -7,7 +7,6 @@
     position: fixed;
     top: 20px;
     background: rgba(255, 255, 255, 0.16);
-    /* padding: 15px 24px 30px 24px; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -23,7 +22,6 @@
 }
 
 .close-button {
-    /* float: right; */
     align-self: flex-end;
     margin: 20px;
 }
@@ -106,4 +104,12 @@
 
 .noScroll {
     overflow: hidden;
+}
+
+@media (min-width: 576px) {
+    .project-container {
+        align-self: center;
+        justify-self: center;
+        z-index: 4;
+    }
 }
