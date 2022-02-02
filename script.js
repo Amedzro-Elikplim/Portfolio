@@ -7,6 +7,7 @@ const button1 = document.querySelector('.project-button1');
 const button2 = document.querySelector('.project-button2');
 const button3 = document.querySelector('.project-button3')
 const button4 = document.querySelector('.project-button4')
+const desktopProjectContainer = document.querySelector('.project');
 
 
 barIcon.addEventListener('click', () => {
@@ -105,7 +106,13 @@ closeIcon.addEventListener('click', () => {
   container.appendChild(link2);
 
   backgroundDiv.appendChild(container)
-  projectContainer.appendChild(backgroundDiv);
+
+  if (window.innerWidth < 567) {
+     projectContainer.appendChild(backgroundDiv);
+  } else {
+    desktopProjectContainer.appendChild(backgroundDiv);
+  }
+  
 
 }
 
