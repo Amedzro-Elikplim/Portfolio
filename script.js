@@ -28,10 +28,10 @@ closeIcon.addEventListener('click', () => {
 const details = [
   {
     project1: {
-      name: "Scientific Calculator",
+      name: "Multi - Post Stories",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis vel a ea sequi quidem culpa accusamus possimus, aliquid delectus, id molestias consequatur",
-      featuredImage: "./assets/images/background.jpg",
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis vel a ea sequi quidem culpa accusamus possimus, aliquid d nting and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since theelectus, id molestias consequatur",
+      featuredImage: "./assets/images/Snapshoot.svg",
       technologies: ["Html/Css", "Javascript", "Ruby on rails"],
       liveVersion: "https://amedzro-elikplim.github.io/Portfolio/",
       source: "https://github.com/Amedzro-Elikplim/Portfolio",
@@ -40,7 +40,7 @@ const details = [
     },
 
     project2: {
-      name: "Scientific",
+      name: "Multi - Post stories 2",
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis vel a ea sequi quidem culpa accusamus possimus, aliquid delectus, id molestias consequatur",
       featuredImage: "./assets/images/background.jpg",
@@ -91,7 +91,6 @@ function createProject1() {
   link2.className = "links";
   backgroundDiv.className = "background-div";
   
-
   body.classList.add('noScroll');
   
 closeIcon.addEventListener('click', () => {
@@ -116,8 +115,6 @@ closeIcon.addEventListener('click', () => {
   projectContainer.appendChild(backgroundDiv);
 
 }
-
-
 
 button1.addEventListener("click", createProject1);
 
