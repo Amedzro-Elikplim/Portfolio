@@ -53,6 +53,7 @@ function createProjects() {
   container.appendChild(closeIcon);
   closeIcon.className = 'close-button';
   button1.classList.toggle('hidden');
+  container.style.overflow = 'scroll';
 closeIcon.addEventListener('click', ()=>{
     container.classList.toggle('hidden');
     button1.classList.toggle('active');

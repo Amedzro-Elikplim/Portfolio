@@ -1,13 +1,12 @@
 .project-container {
     width: 90%;
-    height: 100vh;
-    opacity: 0.4;
-    background: blue;
-    /* z-index: 2; */
+    height: 837px;
+    opacity: 0.9;
     margin-left: 20px;
-    position: fixed;
-    top: 70px;
-
+    top: 130px;
+    border: 2px solid #fff;
+    bottom: 100px;
+    z-index: 2;
 }
 
 .hidden {
