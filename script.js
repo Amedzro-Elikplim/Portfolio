@@ -111,6 +111,9 @@ function popup(name) {
   backgroundDiv.className = "background-div";
   closeIcon.src = "/assets/images/Icon.png";
   closeIcon.className = "close-button";
+  if(window.innerWidth > 567){
+    container.style.overflow = 'visible';
+  }
 
   heading();
   description()

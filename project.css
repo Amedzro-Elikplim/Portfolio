@@ -1,6 +1,6 @@
 .project-container {
     width: 90%;
-    height: 760px;
+    min-height: 90vh;
     margin: 24px;
     border: 2px solid #fff;
     z-index: 2;
@@ -38,7 +38,7 @@
 }
 
 .background-div {
-     width: 100%;
+    width: 100%;
     height: 100vh;
     z-index: 2;
     position: fixed;
@@ -109,5 +109,6 @@
 @media (min-width: 576px) {
     .project-container {
         margin-left: 5%;
+        overflow: visible;
     }
 }
