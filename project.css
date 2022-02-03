@@ -121,6 +121,11 @@
 
   .description {
     width: 50vw;
+    font-family: Roboto, sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 30px;
+    text-align: center;
   }
 
   .links {
@@ -131,7 +136,40 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 30px;
     align-items: center;
+    margin-bottom: 50px;
+    margin-top: 20px;
+  }
+
+  .heading {
+    font-size: 40px;
+    font-family: Roboto, sans-serif;
+    font-weight: 500;
+    line-height: 32px;
+    font-style: normal;
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+
+  .list li {
+    font-weight: 500;
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .links {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 24px;
+  }
+
+  .close-button {
+    margin-bottom: -30px;
+    margin-top: 50px;
+    margin-right: 70px;
   }
 }
