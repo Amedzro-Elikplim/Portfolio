@@ -28,113 +28,111 @@ closeIcon.addEventListener('click', () => {
 });
 
 
-
 const details = [
   {
-      name: "Multi - Post Stories",
-      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis vel a ea sequi quidem culpa accusamus possimus, aliquid d nting and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since theelectus, id molestias consequatur",
-      featuredImage: "./assets/images/Snapshoot.svg",
-      technologies: ["Html/Css", "Javascript", "Ruby on rails"],
-      liveVersion: "https://amedzro-elikplim.github.io/Portfolio/",
-      source: "https://github.com/Amedzro-Elikplim/Portfolio",
-      btn1Name: "See live",
-      btn2Name: "See source",
+      name: 'Multi - Post Stories',
+      description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis vel a ea sequi quidem culpa accusamus possimus, aliquid d nting and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since theelectus, id molestias consequatur',
+      featuredImage: './assets/images/Snapshoot.svg',
+      featuredImage2: './assets/images/desktop-image.svg',
+      technologies: ['Html/Css', 'Javascript', 'Ruby on rails'],
+      liveVersion: 'https://amedzro-elikplim.github.io/Portfolio/',
+      source: 'https://github.com/Amedzro-Elikplim/Portfolio',
+      btn1Name: 'See live',
+      btn2Name: 'See source',
   },
 ];
 
 
+
+
+
 function heading() {
-  const heading = document.createElement("h1");
+  const heading = document.createElement('h1');
   heading.innerHTML = details[0].name;
-  heading.className = "heading";
+  heading.className = 'heading';
   
   return heading;
 }
 
 
 function description() {
-  const description = document.createElement("p");
+  const description = document.createElement('p');
   description.innerHTML = details[0].description;
-  description.className = "description";
+  description.className = 'description';
 
   return description;
 }
 
 
-function technologies() {
-  const technologies = document.createElement("ul");
-  technologies.className = "list";
-
-  return technologies;
-}
-
-
 function projectImage() {
-  const projectImage = document.createElement("img");
-  projectImage.src = details[0].featuredImage;
-  projectImage.className = "projectImage";
+  const projectImage = document.createElement('img');
+
+  let source = (window.innerWidth < 700) ? details[0].featuredImage : details[0].featuredImage2;
+  projectImage.src = source;
+  projectImage.className = 'projectImage';
 
   return projectImage;
 }
 
 
 function liveLink() {
-  const link1 = document.createElement("a");
+  const link1 = document.createElement('a');
   link1.innerHTML = details[0].btn1Name;
   link1.href = details[0].liveVersion;
-  link1.className = "links";
+  link1.className = 'links';
 
   return link1;
 }
 
 function sourceLink() {
-  const link2 = document.createElement("a");
+  const link2 = document.createElement('a');
   link2.innerHTML = details[0].btn2Name;
   link2.href = details[0].source;
-  link2.className = "links";
+  link2.className = 'links';
   
   return link2;
 }
 
 
-  
 
 function popup(name) {
   const projectContainer = document.querySelector(name);
-  const backgroundDiv = document.createElement("div");
-  const container = document.createElement("div");
-  const closeIcon = document.createElement("img");
+  const backgroundDiv = document.createElement('div');
+  const container = document.createElement('div');
+  const closeIcon = document.createElement('img');
+  const technologies = document.createElement('ul');
+  const buttonWrapper = document.createElement('div');
 
-  
-  
-  container.className = "project-container";
-  backgroundDiv.className = "background-div";
-  closeIcon.src = "/assets/images/Icon.png";
-  closeIcon.className = "close-button";
-  container.classList.add("visible");
-  backgroundDiv.classList.add("scroll");
+  buttonWrapper.className = 'button-wrapper';
+  technologies.className = 'list';
+
+  container.className = 'project-container';
+  backgroundDiv.className = 'background-div';
+  closeIcon.src = '/assets/images/Icon.png';
+  closeIcon.className = 'close-button';
+  container.classList.add('visible');
+  backgroundDiv.classList.add('scroll');
 
   heading();
   description()
-  technologies();
   projectImage();
+
+  const arr = details[0].technologies;
+   for (let i = 0; i < arr.length; i++) {
+     let link = document.createElement('li');
+     link.innerHTML = arr[i];
+     technologies.appendChild(link);
+   }
  
-  closeIcon.addEventListener("click", () =>  {
-      container.classList.toggle("hidden");
-      body.classList.remove("noScroll");
-      backgroundDiv.classList.toggle("hidden");
+  closeIcon.addEventListener('click', () =>  {
+      container.classList.toggle('hidden');
+      body.classList.remove('noScroll');
+      backgroundDiv.classList.toggle('hidden');
     }
   );
   
-  const arr = details[0].technologies;
-  for (let i = 0; i < arr.length; i++) {
-    const li = document.createElement("li");
-    li.innerHTML = arr[i];
-    technologies().appendChild(li);
-  }
-
-  
-container.append(closeIcon, heading(), projectImage(), description(), technologies(), liveLink(), sourceLink());
+  buttonWrapper.append(liveLink(), sourceLink());
+  container.append(closeIcon, heading(), projectImage(), description(), technologies, buttonWrapper);
   backgroundDiv.appendChild(container)
   
 
@@ -144,9 +142,9 @@ container.append(closeIcon, heading(), projectImage(), description(), technologi
 }
 
 
-button1.addEventListener("click", () => popup('.project-info-container1'));
+button1.addEventListener('click', () => popup('.project-info-container1'));
 button2.addEventListener('click', () => popup('.project-info-container2'));
-button3.addEventListener("click", () => popup('.project-info-container3'));
+button3.addEventListener('click', () => popup('.project-info-container3'));
 button4.addEventListener('click', () => popup('.project-info-container4'));
 
 
