@@ -31,7 +31,6 @@ closeIcon.addEventListener('click', () => {
 
 const details = [
   {
-    project1: {
       name: "Multi - Post Stories",
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis vel a ea sequi quidem culpa accusamus possimus, aliquid d nting and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since theelectus, id molestias consequatur",
@@ -41,275 +40,113 @@ const details = [
       source: "https://github.com/Amedzro-Elikplim/Portfolio",
       btn1Name: "See live",
       btn2Name: "See source",
-    },
   },
 ];
 
 
+function heading() {
+  const heading = document.createElement("h1");
+  heading.innerHTML = details[0].name;
+  heading.className = "heading";
+  
+  return heading;
+}
 
-function createProject1() {
-  const projectContainer = document.querySelector('.project-info-container1');
-  const backgroundDiv = document.createElement('div');
-  const container = document.createElement('div');
-  const closeIcon = document.createElement('img');
-  const heading = document.createElement('h1');
-  const projectImage = document.createElement('img');
-  const description = document.createElement('p');
-  const technologies = document.createElement('ul');
-  const list1 = document.createElement('li');
-  const list2 = document.createElement('li');
-  const list3 = document.createElement('li');
-  const link1 = document.createElement('a');
-  const link2 = document.createElement('a');
-  
-  
-  heading.innerHTML = details[0].project1.name;
-  projectImage.src = details[0].project1.featuredImage;
-  description.innerHTML = details[0].project1.description;
-  closeIcon.src = '/assets/images/Icon.png';
-  list1.innerHTML = details[0].project1.technologies[0];
-  list2.innerHTML = details[0].project1.technologies[1];
-  list3.innerHTML = details[0].project1.technologies[2];
-  link1.innerHTML = details[0].project1.btn1Name;
-  link1.href = details[0].project1.liveVersion;
-  link2.innerHTML = details[0].project1.btn2Name;
-  link2.href = details[0].project1.source;
-  
-  
-  container.className = 'project-container';
-  closeIcon.className = 'close-button';
-  heading.className = 'heading';
-  description.className = 'description';
-  technologies.className = 'list';
+
+function description() {
+  const description = document.createElement("p");
+  description.innerHTML = details[0].description;
+  description.className = "description";
+
+  return description;
+}
+
+
+function technologies() {
+  const technologies = document.createElement("ul");
+  technologies.className = "list";
+
+  return technologies;
+}
+
+
+function projectImage() {
+  const projectImage = document.createElement("img");
+  projectImage.src = details[0].featuredImage;
+
+  return projectImage;
+}
+
+
+function liveLink() {
+  const link1 = document.createElement("a");
+  link1.innerHTML = details[0].btn1Name;
+  link1.href = details[0].liveVersion;
   link1.className = "links";
+
+  return link1;
+}
+
+function sourceLink() {
+  const link2 = document.createElement("a");
+  link2.innerHTML = details[0].btn2Name;
+  link2.href = details[0].source;
   link2.className = "links";
+  
+  return link2;
+}
+
+
+  
+
+function popup(name) {
+  const projectContainer = document.querySelector(name);
+  const backgroundDiv = document.createElement("div");
+  const container = document.createElement("div");
+  const closeIcon = document.createElement("img");
+
+  
+  
+  container.className = "project-container";
   backgroundDiv.className = "background-div";
-  
-  body.classList.add('noScroll');
-  
-closeIcon.addEventListener('click', () => {
-  container.classList.toggle('hidden');
-  body.classList.remove('noScroll');
-  backgroundDiv.classList.toggle('hidden');
-})
-  
-  technologies.appendChild(list1);
-  technologies.appendChild(list2);
-  technologies.appendChild(list3);
-  
-  container.appendChild(closeIcon);
-  container.appendChild(heading);
-  container.appendChild(projectImage);
-  container.appendChild(description);
-  container.appendChild(technologies);
-  container.appendChild(link1);
-  container.appendChild(link2);
+  closeIcon.src = "/assets/images/Icon.png";
+  closeIcon.className = "close-button";
 
-  backgroundDiv.appendChild(container)
-
-  if (window.innerWidth < 567) {
-     projectContainer.appendChild(backgroundDiv);
-  } else {
-    desktopProjectContainer.appendChild(backgroundDiv);
+  heading();
+  description()
+  technologies();
+  projectImage();
+ 
+  closeIcon.addEventListener("click", () =>  {
+      container.classList.toggle("hidden");
+      body.classList.remove("noScroll");
+      backgroundDiv.classList.toggle("hidden");
+    }
+  );
+  
+  const arr = details[0].technologies;
+  for (let i = 0; i < arr.length; i++) {
+    const li = document.createElement("li");
+    li.innerHTML = arr[i];
+    technologies().appendChild(li);
   }
-  
 
-}
-
-
-function createProject2() {
-  const projectContainer = document.querySelector('.project-info-container2');
-  const backgroundDiv = document.createElement('div');
-  const container = document.createElement('div');
-  const closeIcon = document.createElement('img');
-  const heading = document.createElement('h1');
-  const projectImage = document.createElement('img');
-  const description = document.createElement('p');
-  const technologies = document.createElement('ul');
-  const list1 = document.createElement('li');
-  const list2 = document.createElement('li');
-  const list3 = document.createElement('li');
-  const link1 = document.createElement('a');
-  const link2 = document.createElement('a');
-  
-  
-  heading.innerHTML = details[0].project1.name;
-  projectImage.src = details[0].project1.featuredImage;
-  description.innerHTML = details[0].project1.description;
-  closeIcon.src = '/assets/images/Icon.png';
-  list1.innerHTML = details[0].project1.technologies[0];
-  list2.innerHTML = details[0].project1.technologies[1];
-  list3.innerHTML = details[0].project1.technologies[2];
-  link1.innerHTML = details[0].project1.btn1Name;
-  link1.href = details[0].project1.liveVersion;
-  link2.innerHTML = details[0].project1.btn2Name;
-  link2.href = details[0].project1.source;
-  
-  
-  container.className = 'project-container';
-  closeIcon.className = 'close-button';
-  heading.className = 'heading';
-  description.className = 'description';
-  technologies.className = 'list';
-  link1.className = "links";
-  link2.className = "links";
-  backgroundDiv.className = "background-div";
-  
   body.classList.add('noScroll');
   
-closeIcon.addEventListener('click', () => {
-  container.classList.toggle('hidden');
-  body.classList.remove('noScroll');
-  backgroundDiv.classList.toggle('hidden');
-})
-  
-  technologies.appendChild(list1);
-  technologies.appendChild(list2);
-  technologies.appendChild(list3);
-  
-  container.appendChild(closeIcon);
-  container.appendChild(heading);
-  container.appendChild(projectImage);
-  container.appendChild(description);
-  container.appendChild(technologies);
-  container.appendChild(link1);
-  container.appendChild(link2);
+container.append(closeIcon, heading(), projectImage(), description(), technologies(), liveLink(), sourceLink());
+backgroundDiv.appendChild(container)
 
-  backgroundDiv.appendChild(container)
-  projectContainer.appendChild(backgroundDiv);
+  let attach = window.innerWidth < 567 ? projectContainer : desktopProjectContainer;
+  attach.appendChild(backgroundDiv);
 
 }
 
-function createProject3() {
-  const projectContainer = document.querySelector('.project-info-container3');
-  const backgroundDiv = document.createElement('div');
-  const container = document.createElement('div');
-  const closeIcon = document.createElement('img');
-  const heading = document.createElement('h1');
-  const projectImage = document.createElement('img');
-  const description = document.createElement('p');
-  const technologies = document.createElement('ul');
-  const list1 = document.createElement('li');
-  const list2 = document.createElement('li');
-  const list3 = document.createElement('li');
-  const link1 = document.createElement('a');
-  const link2 = document.createElement('a');
-  
-  
-  heading.innerHTML = details[0].project1.name;
-  projectImage.src = details[0].project1.featuredImage;
-  description.innerHTML = details[0].project1.description;
-  closeIcon.src = '/assets/images/Icon.png';
-  list1.innerHTML = details[0].project1.technologies[0];
-  list2.innerHTML = details[0].project1.technologies[1];
-  list3.innerHTML = details[0].project1.technologies[2];
-  link1.innerHTML = details[0].project1.btn1Name;
-  link1.href = details[0].project1.liveVersion;
-  link2.innerHTML = details[0].project1.btn2Name;
-  link2.href = details[0].project1.source;
-  
-  
-  container.className = 'project-container';
-  closeIcon.className = 'close-button';
-  heading.className = 'heading';
-  description.className = 'description';
-  technologies.className = 'list';
-  link1.className = "links";
-  link2.className = "links";
-  backgroundDiv.className = "background-div";
-  
-  body.classList.add('noScroll');
-  
-closeIcon.addEventListener('click', () => {
-  container.classList.toggle('hidden');
-  body.classList.remove('noScroll');
-  backgroundDiv.classList.toggle('hidden');
-})
-  
-  technologies.appendChild(list1);
-  technologies.appendChild(list2);
-  technologies.appendChild(list3);
-  
-  container.appendChild(closeIcon);
-  container.appendChild(heading);
-  container.appendChild(projectImage);
-  container.appendChild(description);
-  container.appendChild(technologies);
-  container.appendChild(link1);
-  container.appendChild(link2);
 
-  backgroundDiv.appendChild(container)
-  projectContainer.appendChild(backgroundDiv);
+button1.addEventListener("click", () => popup('.project-info-container1'));
+button2.addEventListener('click', () => popup('.project-info-container2'));
+button3.addEventListener("click", () => popup('.project-info-container3'));
+button4.addEventListener('click', () => popup('.project-info-container4'));
 
-}
-
-function createProject4() {
-  const projectContainer = document.querySelector('.project-info-container4');
-  const backgroundDiv = document.createElement('div');
-  const container = document.createElement('div');
-  const closeIcon = document.createElement('img');
-  const heading = document.createElement('h1');
-  const projectImage = document.createElement('img');
-  const description = document.createElement('p');
-  const technologies = document.createElement('ul');
-  const list1 = document.createElement('li');
-  const list2 = document.createElement('li');
-  const list3 = document.createElement('li');
-  const link1 = document.createElement('a');
-  const link2 = document.createElement('a');
-  
-  
-  heading.innerHTML = details[0].project1.name;
-  projectImage.src = details[0].project1.featuredImage;
-  description.innerHTML = details[0].project1.description;
-  closeIcon.src = '/assets/images/Icon.png';
-  list1.innerHTML = details[0].project1.technologies[0];
-  list2.innerHTML = details[0].project1.technologies[1];
-  list3.innerHTML = details[0].project1.technologies[2];
-  link1.innerHTML = details[0].project1.btn1Name;
-  link1.href = details[0].project1.liveVersion;
-  link2.innerHTML = details[0].project1.btn2Name;
-  link2.href = details[0].project1.source;
-  
-  
-  container.className = 'project-container';
-  closeIcon.className = 'close-button';
-  heading.className = 'heading';
-  description.className = 'description';
-  technologies.className = 'list';
-  link1.className = "links";
-  link2.className = "links";
-  backgroundDiv.className = "background-div";
-  
-  body.classList.add('noScroll');
-  
-closeIcon.addEventListener('click', () => {
-  container.classList.toggle('hidden');
-  body.classList.remove('noScroll');
-  backgroundDiv.classList.toggle('hidden');
-})
-  
-  technologies.appendChild(list1);
-  technologies.appendChild(list2);
-  technologies.appendChild(list3);
-  
-  container.appendChild(closeIcon);
-  container.appendChild(heading);
-  container.appendChild(projectImage);
-  container.appendChild(description);
-  container.appendChild(technologies);
-  container.appendChild(link1);
-  container.appendChild(link2);
-
-  backgroundDiv.appendChild(container)
-  projectContainer.appendChild(backgroundDiv);
-
-}
-
-button1.addEventListener("click", createProject1);
-button2.addEventListener('click', createProject2);
-button3.addEventListener('click', createProject3);
-button4.addEventListener('click', createProject4);
 
 
 

@@ -467,6 +467,7 @@ section {
     padding-top: 26px;
     position: fixed;
     top: 0;
+    background-color:#191765;
   }
 
   .bar-icon {
