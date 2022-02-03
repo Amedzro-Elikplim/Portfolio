@@ -108,8 +108,6 @@
 
 @media (min-width: 576px) {
     .project-container {
-        align-self: center;
-        justify-self: center;
-        z-index: 4;
+        margin-left: 5%;
     }
 }
