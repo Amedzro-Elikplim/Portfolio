@@ -32,8 +32,7 @@ closeIcon.addEventListener('click', () => {
 const details = [
   {
       name: "Multi - Post Stories",
-      description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis vel a ea sequi quidem culpa accusamus possimus, aliquid d nting and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since theelectus, id molestias consequatur",
+      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis vel a ea sequi quidem culpa accusamus possimus, aliquid d nting and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since theelectus, id molestias consequatur",
       featuredImage: "./assets/images/Snapshoot.svg",
       technologies: ["Html/Css", "Javascript", "Ruby on rails"],
       liveVersion: "https://amedzro-elikplim.github.io/Portfolio/",
@@ -73,6 +72,7 @@ function technologies() {
 function projectImage() {
   const projectImage = document.createElement("img");
   projectImage.src = details[0].featuredImage;
+  projectImage.className = "projectImage";
 
   return projectImage;
 }
@@ -111,9 +111,8 @@ function popup(name) {
   backgroundDiv.className = "background-div";
   closeIcon.src = "/assets/images/Icon.png";
   closeIcon.className = "close-button";
-  if(window.innerWidth > 567){
-    container.style.overflow = 'visible';
-  }
+  container.classList.add("visible");
+  backgroundDiv.classList.add("scroll");
 
   heading();
   description()
@@ -134,10 +133,10 @@ function popup(name) {
     technologies().appendChild(li);
   }
 
-  body.classList.add('noScroll');
   
 container.append(closeIcon, heading(), projectImage(), description(), technologies(), liveLink(), sourceLink());
-backgroundDiv.appendChild(container)
+  backgroundDiv.appendChild(container)
+  
 
   let attach = window.innerWidth < 567 ? projectContainer : desktopProjectContainer;
   attach.appendChild(backgroundDiv);

@@ -4,7 +4,6 @@
     margin: 24px;
     border: 2px solid #fff;
     z-index: 2;
-    position: fixed;
     top: 20px;
     background: rgba(255, 255, 255, 0.16);
     display: flex;
@@ -12,6 +11,8 @@
     justify-content: center;
     align-items: center;
 }
+
+
 
 .hidden {
     display: none;
@@ -99,16 +100,26 @@
 }
 
 .scroll {
-    overflow: visible;
+    overflow: scroll;
+}
+
+.visible {
+  overflow: visible;
 }
 
 .noScroll {
     overflow: hidden;
 }
 
+
 @media (min-width: 576px) {
     .project-container {
         margin-left: 5%;
         overflow: visible;
+    }
+
+    .projectImage {
+      width: 1000px;
+      height: 500px;
     }
 }
