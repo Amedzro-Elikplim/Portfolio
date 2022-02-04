@@ -58,7 +58,7 @@ function projectTemplate(className, infoContainer) {
               dummy text.
             </p>
           </div>
-            <button onclick="popup('.info-project-container1')" class="project-button project-button1"> </button>
+            <button onclick="popup('.project-info-container1')" class="project-button project-button1"> </button>
           <div class="technologies">
             <ul>
               <li>css</li>
@@ -98,7 +98,6 @@ const arrButton = [
 ];
 
 const buttonID = ['button1', 'button2', 'button3', 'button4'];
-
 
 for (let i = 0; i < 4; i += 1) {
   workSection.innerHTML += projectTemplate(arrClassName[i], arrInfo[i]);
@@ -190,7 +189,6 @@ function popup(name) {
   const attach = window.innerWidth < 567 ? projectContainer : desktopProjectContainer;
   attach.appendChild(backgroundDiv);
 }
-
 // button2.addEventListener('click', () => popup('.project-info-container2'));
 // button3.addEventListener('click', () => popup('.project-info-container3'));
 // button4.addEventListener('click', () => popup('.project-info-container4'));
