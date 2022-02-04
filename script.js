@@ -57,56 +57,6 @@ const details = [
   },
 ];
 
-function projectCard(details) {
-  const card = `
-     <div class="project">
-      <div class="project-image-container">
-          <img
-            src="./assets/images/art.png"
-            alt="project image"
-            class="project-image"
-          />
-        </div>
-
-        <div>
-          <div class="project-info-container1">
-            <h2 class="project-name">${details[0].name}</h2>
-            <p class="project-description">
-              A daily selection of privately personalized reads; no accounts or
-              sign-ups required. has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a standard
-              dummy text.
-            </p>
-          </div>
-
-          <div class="technologies">
-            <ul>
-              <li>css</li>
-              <li>html</li>
-              <li>bootstrap</li>
-              <li>ruby</li>
-            </ul>
-          </div>
-
-          <button
-            type="button"
-            class="project-button project-button1"
-            id="button1"
-          >
-            See Project
-          </button>
-        </div>
-      </div>
-      </div>
-  `;
-  return card;
-}
-
-for (let i = 0; i < 4; i += 1) {
-  const workSection = document.querySelector('.work-section');
-  workSection.innerHTML += projectCard(details);
-}
-
 function heading() {
   const heading = document.createElement('h1');
   heading.innerHTML = details[0].name;
@@ -125,7 +75,6 @@ function description() {
 
 function projectImage() {
   const projectImage = document.createElement('img');
-
   const source = (window.innerWidth < 700) ? details[0].featuredImage : details[0].featuredImage2;
   projectImage.src = source;
   projectImage.className = 'projectImage';
