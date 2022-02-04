@@ -8,6 +8,7 @@ const button2 = document.querySelector('.project-button2');
 const button3 = document.querySelector('.project-button3');
 const button4 = document.querySelector('.project-button4');
 const desktopProjectContainer = document.querySelector('.project');
+const form = document.getElementById('form');
 
 barIcon.addEventListener('click', () => {
   mobileMenuDropdown.style.display = 'block';
@@ -25,6 +26,22 @@ closeIcon.addEventListener('click', () => {
   mobileMenuDropdown.style.display = 'none';
   body.style.overflow = 'visible';
 });
+
+function submitForm(e) {
+  const email = document.getElementById('email');
+  const error = document.getElementById('error');
+  error.className = 'error-message';
+  const userEmail = email.value;
+
+  if (userEmail !== userEmail.toLowerCase()) {
+    error.innerHTML = 'Please let your email be in lower case only';
+    e.preventDefault();
+  } else {
+    error.innerHTML = '';
+  }
+}
+
+form.onsubmit = submitForm;
 
 const details = [
   {

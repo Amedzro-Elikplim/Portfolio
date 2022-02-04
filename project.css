@@ -109,6 +109,13 @@
   overflow: hidden;
 }
 
+
+.error-message {
+  color: red;
+  font-family: Roboto, sans-serif;
+  margin-top: 5px;
+}
+
 @media (min-width: 576px) {
   .project-container {
     margin-left: 5%;
