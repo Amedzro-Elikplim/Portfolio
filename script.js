@@ -3,11 +3,6 @@ const mobileMenuDropdown = document.querySelector('.dropdown-menu');
 const lists = document.querySelectorAll('.menu-nav-links > li');
 const body = document.querySelector('.main-body');
 const closeIcon = document.querySelector('.dropdown-menu-icon');
-const button1 = document.querySelector('.project-button1');
-const button2 = document.querySelector('.project-button2');
-const button3 = document.querySelector('.project-button3');
-const button4 = document.querySelector('.project-button4');
-const desktopProjectContainer = document.querySelector('.project');
 const form = document.getElementById('form');
 
 barIcon.addEventListener('click', () => {
@@ -34,7 +29,7 @@ function submitForm(e) {
   const userEmail = email.value;
 
   if (userEmail !== userEmail.toLowerCase()) {
-    error.innerHTML = 'Please let your email be in lower case only';
+    error.innerHTML = 'Please let your email be in lower case';
     e.preventDefault();
   } else {
     error.innerHTML = '';
@@ -55,6 +50,22 @@ const details = [
     btn1Name: 'See live',
     btn2Name: 'See source',
   },
+];
+
+const workSection = document.querySelector('.work-section');
+const arrClassName = ['project', 'project-reverse project', 'project', 'project-reverse1 project'];
+const arrInfo = [
+  'project-info-container1',
+  'project-info-container2',
+  'project-info-container3',
+  'project-info-container4',
+];
+
+const popInfo = [
+  'project-info-container1',
+  'project-info-container2',
+  'project-info-container3',
+  'project-info-container4',
 ];
 
 function heading() {
@@ -84,7 +95,11 @@ function projectImage() {
 
 function liveLink() {
   const link1 = document.createElement('a');
-  link1.innerHTML = details[0].btn1Name;
+  const div1 = document.createElement('div');
+  const div2 = document.createElement('div');
+  link1.append(div1, div2);
+  div1.innerHTML = details[0].btn1Name;
+  div2.innerHTML = '<i class="fas fa-external-link-alt"></i>';
   link1.href = details[0].liveVersion;
   link1.className = 'links';
 
@@ -93,14 +108,19 @@ function liveLink() {
 
 function sourceLink() {
   const link2 = document.createElement('a');
-  link2.innerHTML = details[0].btn2Name;
+  const div1 = document.createElement('div');
+  const div2 = document.createElement('div');
+  div1.innerHTML = details[0].btn2Name;
+  div2.innerHTML = '<i class="fab fa-github"></i>';
   link2.href = details[0].source;
+  link2.append(div1, div2);
   link2.className = 'links';
 
   return link2;
 }
 
 function popup(name) {
+  const desktopProjectContainer = document.querySelector('.project');
   const projectContainer = document.querySelector(name);
   const backgroundDiv = document.createElement('div');
   const container = document.createElement('div');
@@ -143,7 +163,52 @@ function popup(name) {
   attach.appendChild(backgroundDiv);
 }
 
-button1.addEventListener('click', () => popup('.project-info-container1'));
-button2.addEventListener('click', () => popup('.project-info-container2'));
-button3.addEventListener('click', () => popup('.project-info-container3'));
-button4.addEventListener('click', () => popup('.project-info-container4'));
+function projectTemplate(className, infoContainer, popInfo) {
+  const project = `
+    <div class=${className}>
+        <div class="project-image-container">
+          <img
+            src="./assets/images/art.png"
+            alt="project image"
+            class="project-image"
+          />
+        </div>
+
+        <div>
+          <div class=${infoContainer}>
+            <h2 class="project-name">Multi-Post Stories</h2>
+            <p class="project-description">
+              A daily selection of privately personalized reads; no accounts or
+              sign-ups required. has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a standard
+              dummy text.
+            </p>
+          </div>
+            <button onclick="popup('.${popInfo}')" class="project-button project-button1">See project</button>
+          <div class="technologies">
+            <ul>
+              <li>css</li>
+              <li>html</li>
+              <li>bootstrap</li>
+              <li>ruby</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+  `;
+
+  return project;
+}
+
+for (let i = 0; i < 4; i += 1) {
+  workSection.innerHTML += projectTemplate(
+    arrClassName[i],
+    arrInfo[i],
+    popInfo[i],
+  );
+}
+
+const mobile = 'small';
+if (mobile === 'large') {
+  popup();
+}
