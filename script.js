@@ -29,7 +29,7 @@ function submitForm(e) {
   const userEmail = email.value;
 
   if (userEmail !== userEmail.toLowerCase()) {
-    error.innerHTML = 'Please let your email be in lower case only';
+    error.innerHTML = 'Please let your email be in lower case';
     e.preventDefault();
   } else {
     error.innerHTML = '';
