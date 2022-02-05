@@ -21,6 +21,22 @@ closeIcon.addEventListener('click', () => {
   body.style.overflow = 'visible';
 });
 
+function submitForm(e) {
+  const email = document.getElementById('email');
+  const error = document.getElementById('error');
+  error.className = 'error-message';
+  const userEmail = email.value;
+
+  if (userEmail !== userEmail.toLowerCase()) {
+    error.innerHTML = 'Please let your email be in lower case only';
+    e.preventDefault();
+  } else {
+    error.innerHTML = '';
+  }
+}
+
+form.onsubmit = submitForm;
+
 const details = [
   {
     name: 'Multi - Post Stories',
@@ -69,7 +85,6 @@ function description() {
 
 function projectImage() {
   const projectImage = document.createElement('img');
-
   const source = (window.innerWidth < 700) ? details[0].featuredImage : details[0].featuredImage2;
   projectImage.src = source;
   projectImage.className = 'projectImage';
