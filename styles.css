@@ -2,8 +2,11 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  background-color: #191765;
   scroll-behavior: smooth;
+}
+
+body {
+  background-color: #191765;
 }
 
 .d-flex {
@@ -34,8 +37,6 @@
   width: 100%;
   justify-content: space-between;
   align-items: center;
-  position: fixed;
-  top: 0;
 }
 
 .navbar-desktop {
@@ -466,6 +467,7 @@ section {
     padding-top: 26px;
     position: fixed;
     top: 0;
+    background-color: #191765;
   }
 
   .bar-icon {
