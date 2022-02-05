@@ -3,6 +3,7 @@ const mobileMenuDropdown = document.querySelector('.dropdown-menu');
 const lists = document.querySelectorAll('.menu-nav-links > li');
 const body = document.querySelector('.main-body');
 const closeIcon = document.querySelector('.dropdown-menu-icon');
+const form = document.getElementById('form');
 
 barIcon.addEventListener('click', () => {
   mobileMenuDropdown.style.display = 'block';
