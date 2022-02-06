@@ -8,6 +8,7 @@ const email = document.getElementById('email');
 const userName = document.getElementById('name');
 const message = document.getElementById('textarea');
 
+
 barIcon.addEventListener('click', () => {
   mobileMenuDropdown.style.display = 'block';
   body.style.overflow = 'hidden';
@@ -24,6 +25,22 @@ closeIcon.addEventListener('click', () => {
   mobileMenuDropdown.style.display = 'none';
   body.style.overflow = 'visible';
 });
+
+userName.onchange = function updateName() {
+  const data = JSON.parse(window.localStorage.getItem('userData'));
+  data.name = userName.value;
+  window.localStorage.setItem('userData', JSON.stringify(data));
+};
+email.onchange = function updateEmail() {
+  const data = JSON.parse(window.localStorage.getItem('userData'));
+  data.email = email.value;
+  window.localStorage.setItem('userData', JSON.stringify(data));
+};
+message.onchange = function updateMessage() {
+  const data = JSON.parse(window.localStorage.getItem('userData'));
+  data.message = message.value;
+  window.localStorage.setItem('userData', JSON.stringify(data));
+};
 
 function saveData() {
   const data = {
