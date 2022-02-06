@@ -8,7 +8,6 @@ const email = document.getElementById('email');
 const userName = document.getElementById('name');
 const message = document.getElementById('textarea');
 
-
 barIcon.addEventListener('click', () => {
   mobileMenuDropdown.style.display = 'block';
   body.style.overflow = 'hidden';
