@@ -52,9 +52,9 @@ form.onsubmit = submitForm;
 function getData() {
   const savedData = JSON.parse(window.localStorage.getItem('userData'));
   if (savedData !== null) {
-    // email.value = savedData.email;
-    // userName.value = savedData.name;
-    // message.value = savedData.message;
+    email.value = savedData.email;
+    userName.value = savedData.name;
+    message.value = savedData.message;
   }
 }
 
