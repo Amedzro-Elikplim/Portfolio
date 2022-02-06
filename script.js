@@ -4,6 +4,9 @@ const lists = document.querySelectorAll('.menu-nav-links > li');
 const body = document.querySelector('.main-body');
 const closeIcon = document.querySelector('.dropdown-menu-icon');
 const form = document.getElementById('form');
+const email = document.getElementById('email');
+const userName = document.getElementById('name');
+const message = document.getElementById('textarea');
 
 barIcon.addEventListener('click', () => {
   mobileMenuDropdown.style.display = 'block';
@@ -22,8 +25,34 @@ closeIcon.addEventListener('click', () => {
   body.style.overflow = 'visible';
 });
 
+userName.onchange = function updateName() {
+  const data = JSON.parse(window.localStorage.getItem('userData'));
+  data.name = userName.value;
+  window.localStorage.setItem('userData', JSON.stringify(data));
+};
+email.onchange = function updateEmail() {
+  const data = JSON.parse(window.localStorage.getItem('userData'));
+  data.email = email.value;
+  window.localStorage.setItem('userData', JSON.stringify(data));
+};
+message.onchange = function updateMessage() {
+  const data = JSON.parse(window.localStorage.getItem('userData'));
+  data.message = message.value;
+  window.localStorage.setItem('userData', JSON.stringify(data));
+};
+
+function saveData() {
+  const data = {
+    name: userName.value,
+    email: email.value,
+    message: message.value,
+  };
+
+  window.localStorage.setItem('userData', JSON.stringify(data));
+}
+
 function submitForm(e) {
-  const email = document.getElementById('email');
+  e.preventDefault();
   const error = document.getElementById('error');
   error.className = 'error-message';
   const userEmail = email.value;
@@ -34,9 +63,22 @@ function submitForm(e) {
   } else {
     error.innerHTML = '';
   }
+
+  saveData();
 }
 
 form.onsubmit = submitForm;
+
+function getData() {
+  const savedData = JSON.parse(window.localStorage.getItem('userData'));
+  if (savedData !== null) {
+    email.value = savedData.email;
+    userName.value = savedData.name;
+    message.value = savedData.message;
+  }
+}
+
+getData();
 
 const details = [
   {
