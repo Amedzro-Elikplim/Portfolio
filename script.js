@@ -25,6 +25,16 @@ closeIcon.addEventListener('click', () => {
   body.style.overflow = 'visible';
 });
 
+function saveData() {
+  const data = {
+    name: userName.value,
+    email: email.value,
+    message: message.value,
+  };
+
+  window.localStorage.setItem('userData', JSON.stringify(data));
+}
+
 function submitForm(e) {
   e.preventDefault();
   const error = document.getElementById('error');
@@ -38,13 +48,7 @@ function submitForm(e) {
     error.innerHTML = '';
   }
 
-  const data = {
-    name: userName.value,
-    email: email.value,
-    message: message.value,
-  };
-
-  window.localStorage.setItem('userData', JSON.stringify(data));
+  saveData();
 }
 
 form.onsubmit = submitForm;
