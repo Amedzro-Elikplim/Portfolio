@@ -82,6 +82,39 @@ getData();
 
 const details = [
   {
+    name: 'Minimalist',
+    description: 'A simple Todo app to add list of books a user has read. It is implemented using HTML, CSS, Webpack, JavaScript and modular architecture. A todo is saved and displayed in Realtime. A todo can be removed from the list of to-dos. Data persistence is implemented using local Storage API.',
+    featuredImage: './assets/images/minimalist.JPG',
+    featuredImage2: './assets/images/desktop-image.svg',
+    technology: ['Html/Css', 'Javascript', 'Ruby on rails'],
+    liveVersion: 'https://amedzro-elikplim.github.io/Portfolio/',
+    source: 'https://github.com/Amedzro-Elikplim/Portfolio',
+    btn1Name: 'See live',
+    btn2Name: 'See source',
+  },
+  {
+    name: 'Multi - Post Stories',
+    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis vel a ea sequi quidem culpa accusamus possimus, aliquid d nting and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since theelectus, id molestias consequatur',
+    featuredImage: './assets/images/Snapshoot.svg',
+    featuredImage2: './assets/images/desktop-image.svg',
+    technology: ['Html/Css', 'Javascript', 'Ruby on rails'],
+    liveVersion: 'https://amedzro-elikplim.github.io/Portfolio/',
+    source: 'https://github.com/Amedzro-Elikplim/Portfolio',
+    btn1Name: 'See live',
+    btn2Name: 'See source',
+  },
+  {
+    name: 'Multi - Post Stories',
+    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis vel a ea sequi quidem culpa accusamus possimus, aliquid d nting and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since theelectus, id molestias consequatur',
+    featuredImage: './assets/images/Snapshoot.svg',
+    featuredImage2: './assets/images/desktop-image.svg',
+    technology: ['Html/Css', 'Javascript', 'Ruby on rails'],
+    liveVersion: 'https://amedzro-elikplim.github.io/Portfolio/',
+    source: 'https://github.com/Amedzro-Elikplim/Portfolio',
+    btn1Name: 'See live',
+    btn2Name: 'See source',
+  },
+  {
     name: 'Multi - Post Stories',
     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis vel a ea sequi quidem culpa accusamus possimus, aliquid d nting and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since theelectus, id molestias consequatur',
     featuredImage: './assets/images/Snapshoot.svg',
@@ -205,12 +238,12 @@ function popup(name) {
   attach.appendChild(backgroundDiv);
 }
 
-function projectTemplate(className, infoContainer, popInfo) {
+function projectTemplate(className, infoContainer, popInfo, description, name, image) {
   const project = `
     <div class=${className}>
         <div class="project-image-container">
           <img
-            src="./assets/images/art.png"
+            src= ${image}
             alt="project image"
             class="project-image"
           />
@@ -218,12 +251,9 @@ function projectTemplate(className, infoContainer, popInfo) {
 
         <div>
           <div class=${infoContainer}>
-            <h2 class="project-name">Multi-Post Stories</h2>
+            <h2 class="project-name">${name}</h2>
             <p class="project-description">
-              A daily selection of privately personalized reads; no accounts or
-              sign-ups required. has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a standard
-              dummy text.
+              ${description}
             </p>
           </div>
             <button onclick="popup('.${popInfo}')" class="project-button project-button1">See project</button>
@@ -231,7 +261,7 @@ function projectTemplate(className, infoContainer, popInfo) {
             <ul>
               <li>css</li>
               <li>html</li>
-              <li>bootstrap</li>
+              <li>Javascript</li>
               <li>ruby</li>
             </ul>
           </div>
@@ -242,11 +272,14 @@ function projectTemplate(className, infoContainer, popInfo) {
   return project;
 }
 
-for (let i = 0; i < 4; i += 1) {
+for (let i = 0; i < details.length; i += 1) {
   workSection.innerHTML += projectTemplate(
     arrClassName[i],
     arrInfo[i],
     popInfo[i],
+    details[i].description,
+    details[i].name,
+    details[i].featuredImage,
   );
 }
 
