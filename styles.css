@@ -471,7 +471,7 @@ section {
   }
 
   .desktop-nav-links {
-    color: white;
+    color: white !important;
     text-decoration: none;
   }
 
