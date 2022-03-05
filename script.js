@@ -256,7 +256,7 @@ function projectTemplate(className, infoContainer, popInfo, description, name, i
               ${description}
             </p>
           </div>
-            <button onclick="popup('.${popInfo}')" class="project-button project-button1">See project</button>
+            <button onclick="popup('.${popInfo} ')" class="project-button project-button1">See project</button>
           <div class="technologies">
             <ul>
               <li>css</li>
