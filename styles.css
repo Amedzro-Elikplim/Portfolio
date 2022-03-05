@@ -470,6 +470,11 @@ section {
     background-color: #191765;
   }
 
+  .desktop-nav-links {
+    color: white;
+    text-decoration: none;
+  }
+
   .bar-icon {
     display: none;
   }
@@ -617,6 +622,7 @@ section {
 
   .fa-envelope:hover {
     rotate: 12deg;
+    cursor: pointer;
   }
 
   .project {
