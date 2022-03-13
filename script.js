@@ -221,7 +221,7 @@ function popup(name, descrip, image, image2, projectName, liveVersion, source) {
   const projectContainer = document.querySelector(name);
   const backgroundDiv = document.createElement('div');
   const container = document.createElement('div');
-  const closeIcon = document.createElement('img');
+  const closeIcon = document.createElement('div');
   const technology = document.createElement('ul');
   const buttonWrapper = document.createElement('div');
 
@@ -230,7 +230,7 @@ function popup(name, descrip, image, image2, projectName, liveVersion, source) {
 
   container.className = 'project-container';
   backgroundDiv.className = 'background-div';
-  closeIcon.src = './assets/images/Icon.png';
+  closeIcon.innerHTML = '<i class="fas fa-times"></i>';
   closeIcon.className = 'close-button';
   container.classList.add('visible');
   backgroundDiv.classList.add('scroll');
