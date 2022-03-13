@@ -230,7 +230,7 @@ function popup(name, descrip, image, image2, projectName, liveVersion, source) {
 
   container.className = 'project-container';
   backgroundDiv.className = 'background-div';
-  closeIcon.src = '/assets/images/Icon.png';
+  closeIcon.src = './assets/images/Icon.png';
   closeIcon.className = 'close-button';
   container.classList.add('visible');
   backgroundDiv.classList.add('scroll');
