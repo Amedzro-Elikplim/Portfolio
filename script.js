@@ -82,17 +82,6 @@ getData();
 
 const details = [
   {
-    name: 'Minimalist',
-    description: 'A simple Todo app to add list of books a user has read. It is implemented using HTML, CSS, Webpack, JavaScript and modular architecture. A todo is saved and displayed in Realtime. A todo can be removed from the list of to-dos. Data persistence is implemented using local Storage API.',
-    featuredImage: './assets/images/minimalist-desktop.JPG',
-    featuredImage2: './assets/images/minimalist-mobile.JPG',
-    technology: ['Html', 'Css', 'Javascript', 'Webpack'],
-    liveVersion: 'https://amedzro-elikplim.github.io/Minimalist/dist/',
-    source: 'https://github.com/Amedzro-Elikplim/Minimalist',
-    btn1Name: 'See live',
-    btn2Name: 'See source',
-  },
-  {
     name: 'Terappy',
     description: 'Terappy is a platform where individuals with mental health issues can easily find therapist and other mental health professional. The user can find and book appointments with therapists, and also choose the medium of communication (audio / video). Weekly progress of user is monitored',
     featuredImage: './assets/images/terappy-desktop.JPG',
@@ -115,6 +104,17 @@ const details = [
     btn2Name: 'See source',
   },
   {
+    name: 'Minimalist',
+    description: 'A simple Todo app to add list of books a user has read. It is implemented using HTML, CSS, Webpack, JavaScript and modular architecture. A todo is saved and displayed in Realtime. A todo can be removed from the list of to-dos. Data persistence is implemented using local Storage API.',
+    featuredImage: './assets/images/minimalist-desktop.JPG',
+    featuredImage2: './assets/images/minimalist-mobile.JPG',
+    technology: ['Html', 'Css', 'Javascript', 'Webpack'],
+    liveVersion: 'https://amedzro-elikplim.github.io/Minimalist/dist/',
+    source: 'https://github.com/Amedzro-Elikplim/Minimalist',
+    btn1Name: 'See live',
+    btn2Name: 'See source',
+  },
+  {
     name: 'Hacfiery Developers Summit',
     description: 'This is a platform dedicated to Hackfiery Developers Global Summit 2022. It showcase the speakers, previous conferences and their respective locations',
     featuredImage: './assets/images/hackfiery-desktop.JPG',
@@ -125,10 +125,32 @@ const details = [
     btn1Name: 'See live',
     btn2Name: 'See source',
   },
+  {
+    name: 'Leaderboard',
+    description: 'The leaderboard website displays scores submitted by different players. It also allows you to submit your score. All data is preserved thanks to an external Leaderboard API service.',
+    featuredImage: './assets/images/leaderboard-desktop.JPG',
+    featuredImage2: './assets/images/leaderboard-mobile.JPG',
+    technology: ['Javascript', 'REST API', 'HTML', 'CSS'],
+    liveVersion: 'https://amedzro-elikplim.github.io/Leaderboard/dist/',
+    source: 'https://github.com/Amedzro-Elikplim/Leaderboard',
+    btn1Name: 'See live',
+    btn2Name: 'See source',
+  },
+  {
+    name: 'MadLib Game',
+    description: 'Mad Libs is the world’s greatest word game and can make anyone the funniest person in the room! Mad Libs are stories with words removed and replaced by blank spaces. One player acts as the “reader” and asks the other players, who haven’t seen the story, to fill in the blanks with adjectives, nouns, exclamations, colors, adjectives, and more. These words are inserted into the blanks and thenthe story is read aloud to hilarious results. For more information visit [ http://www.madlibslive.com/whats-a-mad-lib ].',
+    featuredImage: './assets/images/madlib-desktop.JPG',
+    featuredImage2: './assets/images/madlib-mobile.JPG',
+    technology: ['Javascript', 'Bootstrap', 'HTML', 'CSS'],
+    liveVersion: 'https://amedzro-elikplim.github.io/Madlibs/',
+    source: 'https://github.com/Amedzro-Elikplim/Madlibs',
+    btn1Name: 'See live',
+    btn2Name: 'See source',
+  },
 ];
 
 const workSection = document.querySelector('.work-section');
-const arrClassName = ['project', 'project-reverse project', 'project', 'project-reverse1 project'];
+const arrClassName = ['project', 'project-reverse project', 'project', 'project-reverse1 project', 'project', 'project-reverse project'];
 const arrInfo = [
   'project-info-container1',
   'project-info-container2',
