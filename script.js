@@ -117,9 +117,9 @@ const details = [
   {
     name: 'Hacfiery Developers Summit',
     description: 'This is a platform dedicated to Hackfiery Developers Global Summit 2022. It showcase the speakers, previous conferences and their respective locations',
-    featuredImage: './assets/images/Snapshoot.svg',
-    featuredImage2: './assets/images/desktop-image.svg',
-    technology: ['Html/Css', 'Javascript', 'Ruby on rails'],
+    featuredImage: './assets/images/hackfiery-desktop.JPG',
+    featuredImage2: './assets/images/hackfiery-mobile.JPG',
+    technology: ['Html', 'CSS', 'Javascript', 'Boostrap'],
     liveVersion: 'https://amedzro-elikplim.github.io/Portfolio/',
     source: 'https://github.com/Amedzro-Elikplim/Portfolio',
     btn1Name: 'See live',
