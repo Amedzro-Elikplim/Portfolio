@@ -249,6 +249,8 @@ section {
   width: 340px;
   height: 236px;
   background-color: transparent;
+  border-radius: 10px;
+  border: 1px solid rgb(128, 128, 247);
 }
 
 .project-image-container {
